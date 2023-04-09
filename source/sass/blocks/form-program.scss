@@ -1,25 +1,3 @@
-.form-field__name {
-  text-transform: uppercase;
-  line-height: 18px;
-}
-
-.form-field__input::placeholder,
-.form-field__textarea::placeholder {
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #444444;
-}
-
-.form-field__item {
-  list-style: none;
-  text-transform: uppercase;
-}
-
-.form-field__title {
-  font-size: 24px;
-  line-height: 26px;
-}
-
 .form-program__button-submit {
   background-color: #68b738;
   padding: 7px 44px;
