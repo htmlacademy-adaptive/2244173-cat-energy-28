@@ -3,11 +3,13 @@
   line-height: 18px;
 }
 
-.form-field__input::placeholder,
-.form-field__textarea::placeholder {
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #444444;
+.form-field__input,
+.form-field__textarea {
+  &::placeholder {
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #444444;
+  }
 }
 
 .form-field__item {
