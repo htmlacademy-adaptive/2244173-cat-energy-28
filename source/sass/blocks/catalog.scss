@@ -1,0 +1,54 @@
+.page-main__title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.catalog__item {
+  list-style: none;
+}
+
+.card__link-title {
+  text-decoration: none;
+  color: #222222;
+}
+
+.card__information-item {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  list-style: none;
+}
+
+.catalog__show-more  {
+  list-style: none;
+}
+
+.show-more__title  {
+  line-height: 20px;
+}
+
+.show-more__text {
+  font-family: 'Lato', sans-serif;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+color: #444444;
+}
+
+.show-more__button {
+font-weight: 400;
+line-height: 20px;
+text-decoration: none;
+text-transform: uppercase;
+color: #444444;
+background-color: #f2f2f2;
+padding: 10px 94px;
+}
+
+.card__order-button {
+  background-color: #68b738;
+  padding: 10px 109px;
+}

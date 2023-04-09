@@ -1,1 +1,22 @@
-// Начните писать стили здесь
+// Общие настройки
+@import "./fonts/fonts.scss";
+@import "./base/base.scss";
+
+// index.html
+
+@import "./blocks/header.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/programs.scss";
+@import "./blocks/featurs.scss";
+@import "./blocks/story.scss";
+@import "./blocks/footer.scss";
+
+// catalog.html
+
+@import "./blocks/catalog.scss";
+@import "./blocks/extra-products.scss";
+
+// form.html
+
+@import "./blocks/program-selection.scss";
+@import "./blocks/form-program.scss";
