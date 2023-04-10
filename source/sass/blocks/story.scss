@@ -3,31 +3,22 @@
 }
 
 .story__title {
-  font-size: 36px;
-  line-height: 40px;
+  @include font("Oswald", sans-serif,400,36px,40px);
 }
 
 .story__history {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+  @include font("Lato", sans-serif,400,14px,18px);
 }
 
 .story__value {
-  font-weight: 400;
-  font-size: 24px;
+  @include font("Oswald", sans-serif,400,24px,24px);
 }
 
 .story__description {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 12px;
+  @include font("Oswald", sans-serif,400,12px,12px);
 }
 
 .story__item-costs {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
+  @include font("Oswald", sans-serif,400,14px,20px);
   text-transform: uppercase;
 }

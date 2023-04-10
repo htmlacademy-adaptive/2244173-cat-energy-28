@@ -3,10 +3,6 @@
 }
 
 .contacts__address {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  font-style: normal;
+  @include font("Lato", sans-serif,400,14px,20px);
   color: $grey-dark;
 }

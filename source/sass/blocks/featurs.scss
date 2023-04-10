@@ -1,13 +1,9 @@
 .features__title {
-  font-size: 36px;
-  line-height: 40px;
+  @include font("Oswald", sans-serif,400,36px,40px);
 }
 
 .features__item-text {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+  @include font("Lato", sans-serif,400,14px,18px);
 }
 
 .features__list {

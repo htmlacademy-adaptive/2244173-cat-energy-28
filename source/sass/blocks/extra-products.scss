@@ -15,10 +15,7 @@
 }
 
 .extra-products__amount {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
+  @include font("Lato", sans-serif,400,14px,14px);
 }
 
 .extra-products__promo {
@@ -26,11 +23,10 @@
 }
 
 .extra-products__present-text {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  line-height: 20px;
+  @include font("Lato", sans-serif,400,16px,20px);
   color: $white;
 }
+
 
 .extra-products__title {
   line-height: 16px;

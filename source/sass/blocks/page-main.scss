@@ -3,8 +3,9 @@
 }
 
 .page-main__title {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
+  @include font("Oswald", sans-serif,400,36px,36px);
+}
+
+.page-main__programs {
+  margin-bottom: 20px;
 }
