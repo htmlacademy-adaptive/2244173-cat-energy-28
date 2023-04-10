@@ -7,7 +7,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  color: $grey-dark;
 }
 
 .show-more__button {
@@ -15,7 +15,7 @@
   line-height: 20px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #444444;
-  background-color: #f2f2f2;
+  color: $grey-dark;
+  background-color: $grey-f2;
   padding: 10px 94px;
 }

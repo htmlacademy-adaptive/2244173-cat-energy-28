@@ -1,6 +1,6 @@
 .card__link-title {
   text-decoration: none;
-  color: #222222;
+  color: $nero;
 }
 
 .card__information-item {
@@ -12,6 +12,6 @@
 }
 
 .card__order-button {
-  background-color: #68b738;
+  background-color: $green;
   padding: 10px 109px;
 }

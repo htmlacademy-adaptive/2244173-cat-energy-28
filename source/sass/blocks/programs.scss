@@ -3,12 +3,12 @@
 }
 
 .programs__item {
-  background-color: #f2f2f2;
+  background-color: $grey-f2;
   list-style: none;
 }
 
 .programs__link {
-  color: #000000;
+  color: $black;
   text-transform: uppercase;
   line-height: 16px;
   text-decoration: none;
