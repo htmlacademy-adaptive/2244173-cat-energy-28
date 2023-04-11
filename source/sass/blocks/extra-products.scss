@@ -3,13 +3,6 @@
   padding: 10px 109px;
 }
 
-.extra-products__subtitle {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  color: $black;
-}
-
 .extra-products__item {
   list-style: none;
 }
@@ -26,7 +19,6 @@
   @include font("Lato, sans-serif",400,16px,20px);
   color: $white;
 }
-
 
 .extra-products__title {
   line-height: 16px;

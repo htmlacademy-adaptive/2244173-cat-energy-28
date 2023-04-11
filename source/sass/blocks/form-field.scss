@@ -1,5 +1,4 @@
 .form-field__name {
-  text-transform: uppercase;
   line-height: 18px;
 }
 
@@ -10,13 +9,4 @@
     text-transform: uppercase;
     color: $grey-dark;
   }
-}
-
-.form-field__item {
-  list-style: none;
-  text-transform: uppercase;
-}
-
-.form-field__title {
-  @include font("Oswald, sans-serif",400,24px,26px);
 }

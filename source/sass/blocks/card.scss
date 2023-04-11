@@ -1,5 +1,4 @@
 .card__link-title {
-  text-decoration: none;
   color: $nero;
 }
 
@@ -7,7 +6,6 @@
   @include font("Lato, sans-serif",400,12px,16px);
   list-style: none;
 }
-
 
 .card__order-button {
   background-color: $green;

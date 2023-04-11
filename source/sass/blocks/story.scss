@@ -2,14 +2,6 @@
   background-color: $grey-ed;
 }
 
-.story__title {
-  @include font("Oswald, sans-serif",400,36px,40px);
-}
-
-.story__history {
-  @include font("Lato, sans-serif",400,14px,18px);
-}
-
 .story__value {
   @include font("Oswald, sans-serif",400,24px,24px);
 }
@@ -20,5 +12,4 @@
 
 .story__item-costs {
   @include font("Oswald, sans-serif",400,14px,20px);
-  text-transform: uppercase;
 }
