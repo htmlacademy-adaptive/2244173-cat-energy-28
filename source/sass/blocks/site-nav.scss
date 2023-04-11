@@ -1,9 +1,4 @@
 .site-nav__item {
-  @include font("Oswald", sans-serif,500,20px,20px);
+  @include font("Oswald, sans-serif",500,20px,20px);
   list-style: none;
-}
-
-.site-nav__link {
-  text-decoration: none;
-  color: $black;
 }

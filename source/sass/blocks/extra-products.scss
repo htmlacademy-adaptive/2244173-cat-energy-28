@@ -15,7 +15,7 @@
 }
 
 .extra-products__amount {
-  @include font("Lato", sans-serif,400,14px,14px);
+  @include font("Lato, sans-serif",400,14px,14px);
 }
 
 .extra-products__promo {
@@ -23,7 +23,7 @@
 }
 
 .extra-products__present-text {
-  @include font("Lato", sans-serif,400,16px,20px);
+  @include font("Lato, sans-serif",400,16px,20px);
   color: $white;
 }
 

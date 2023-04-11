@@ -18,5 +18,5 @@
 }
 
 .form-field__title {
-  @include font("Oswald", sans-serif,400,24px,26px);
+  @include font("Oswald, sans-serif",400,24px,26px);
 }

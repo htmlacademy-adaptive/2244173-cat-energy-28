@@ -4,10 +4,7 @@
 }
 
 .programs__link {
-  color: $black;
-  text-transform: uppercase;
   line-height: 16px;
-  text-decoration: none;
 }
 
 .programs__title {
@@ -16,5 +13,5 @@
 }
 
 .programs__description {
-  @include font("Lato", sans-serif,400,14px,18px);
+  @include font("Lato, sans-serif",400,14px,18px);
 }

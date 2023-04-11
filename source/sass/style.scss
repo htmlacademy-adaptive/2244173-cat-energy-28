@@ -1,13 +1,12 @@
-// Общие стили
-@import "./fonts/fonts.scss";
-@import "./base/base.scss";
-@import "./blocks/header-title.scss";
-@import "./blocks/button.scss";
-
 // переменные и миксин
 @import "./variables.scss";
 @import "./mixin.scss";
 
+// Общие стили
+@import "./fonts/fonts.scss";
+@import "./base/base.scss";
+@import "./blocks/button.scss";
+@import "./blocks/title.scss";
 // index.html
 
 @import "./blocks/site-nav.scss";

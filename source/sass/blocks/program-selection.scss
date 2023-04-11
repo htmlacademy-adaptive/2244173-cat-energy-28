@@ -1,7 +1,7 @@
 .program-selection__title {
-  @include font("Oswald", sans-serif,400,36px,36px);
+  @include font("Oswald, sans-serif",400,36px,36px);
 }
 
 .program-selection__description {
-  @include font("Oswald", sans-serif,400,14px,18px);
+  @include font("Oswald, sans-serif",400,14px,18px);
 }

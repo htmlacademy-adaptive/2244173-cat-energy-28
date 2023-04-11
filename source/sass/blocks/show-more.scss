@@ -3,7 +3,7 @@
 }
 
 .show-more__text {
-  @include font("Lato", sans-serif,400,12px,16px);
+  @include font("Lato, sans-serif",400,12px,16px);
   color: $grey-dark;
 }
 

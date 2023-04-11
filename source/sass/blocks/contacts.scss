@@ -3,6 +3,6 @@
 }
 
 .contacts__address {
-  @include font("Lato", sans-serif,400,14px,20px);
+  @include font("Lato, sans-serif",400,14px,20px);
   color: $grey-dark;
 }
