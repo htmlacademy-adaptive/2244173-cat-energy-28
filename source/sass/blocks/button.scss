@@ -1,0 +1,7 @@
+.button {
+  @include font("Oswald, sans-serif",400,14px,18px);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 109px;
+}

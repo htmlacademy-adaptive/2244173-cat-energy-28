@@ -1,0 +1,25 @@
+.extra-products__button {
+  background-color: #68b738;
+  padding: 10px 109px;
+}
+
+.extra-products__item {
+  list-style: none;
+}
+
+.extra-products__amount {
+  @include font("Lato, sans-serif",400,14px,14px);
+}
+
+.extra-products__promo {
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
+.extra-products__present-text {
+  @include font("Lato, sans-serif",400,16px,20px);
+  color: $white;
+}
+
+.extra-products__title {
+  line-height: 16px;
+}

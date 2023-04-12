@@ -1,0 +1,22 @@
+.title--header {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $black;
+  text-decoration: none;
+  list-style: none;
+}
+
+.title--mini {
+  @include font("Lato, sans-serif",400,14px,18px);
+  list-style: none;
+}
+
+.title--info {
+  @include font("Oswald, sans-serif", 400, 24px, 26px);
+  color: $black;
+}
+
+.title--text {
+  @include font("Oswald, sans-serif",400,36px,40px);
+}

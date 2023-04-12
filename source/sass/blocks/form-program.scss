@@ -1,0 +1,8 @@
+.form-program__button-submit {
+  background-color: $green;
+  border: none;
+}
+
+.form-program__note {
+  @include font("Lato, sans-serif",400,14px,16px);
+}

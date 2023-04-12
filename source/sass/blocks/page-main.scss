@@ -1,0 +1,11 @@
+.page-main__promo {
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
+.page-main__title {
+  @include font("Oswald, sans-serif",400,36px,36px);
+}
+
+.page-main__programs {
+  margin-bottom: 20px;
+}

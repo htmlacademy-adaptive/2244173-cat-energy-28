@@ -1,0 +1,15 @@
+.story {
+  background-color: $grey-ed;
+}
+
+.story__value {
+  @include font("Oswald, sans-serif",400,24px,24px);
+}
+
+.story__description {
+  @include font("Oswald, sans-serif",400,12px,12px);
+}
+
+.story__item-costs {
+  @include font("Oswald, sans-serif",400,14px,20px);
+}

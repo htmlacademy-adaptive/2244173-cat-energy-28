@@ -1,0 +1,12 @@
+.form-field__name {
+  line-height: 18px;
+}
+
+.form-field__input,
+.form-field__textarea {
+  &::placeholder {
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $grey-dark;
+  }
+}

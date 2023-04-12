@@ -1,0 +1,11 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  @include font("Oswald, sans-serif",400,16px,24px);
+  margin: 0 auto;
+  height: 100%;
+}

@@ -1,0 +1,12 @@
+.card__link-title {
+  color: $nero;
+}
+
+.card__information-item {
+  @include font("Lato, sans-serif",400,12px,16px);
+  list-style: none;
+}
+
+.card__order-button {
+  background-color: $green;
+}

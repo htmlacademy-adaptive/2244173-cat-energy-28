@@ -1,0 +1,16 @@
+.promo__title {
+  @include font("Oswald, sans-serif",400,36px,36px);
+  text-align: center;
+  color: $white;
+  margin-bottom: 25px;
+}
+
+.promo__slogan {
+  @include font("Oswald, sans-serif",400,14px,14px);
+  text-align: center;
+  color: $white;
+}
+
+.promo__button {
+  background-color: $green;
+}
