@@ -3,7 +3,7 @@
 }
 
 .card__information-item {
-  @include font("Lato, sans-serif",400,12px,16px);
+  @include font("Lato",400,12px,16px);
   list-style: none;
 }
 
