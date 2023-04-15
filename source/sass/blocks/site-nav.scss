@@ -1,4 +1,30 @@
 .site-nav__item {
-  @include font("Oswald, sans-serif",500,20px,20px);
+  @include font("Oswald, sans-serif", 500, 20px, 20px);
   list-style: none;
+  text-transform: uppercase;
+}
+
+.site-nav__link {
+  text-decoration: none;
+  color: $black;
+}
+
+@media (min-width: $tablet-width) {
+  .site-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 30px;
+  }
+
+  .site-nav__item {
+    @include font("Oswald, sans-serif", 400, 18px, 24px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-nav__list {
+    padding-right: 110px;
+  }
 }
