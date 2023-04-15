@@ -3,9 +3,15 @@
 }
 
 .page-main__title {
-  @include font("Oswald",400,36px,36px);
+  @include font("Oswald", 400, 36px, 36px);
 }
 
 .page-main__programs {
   margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__promo {
+    background-color: $color-white;
+  }
 }

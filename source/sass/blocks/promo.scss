@@ -1,16 +1,36 @@
 .promo__title {
-  @include font("Oswald",400,36px,36px);
+  @include font("Oswald", 400, 36px, 36px);
   text-align: center;
-  color: $white;
-  margin-bottom: 25px;
+  color: $color-white;
+  margin: 0;
 }
 
 .promo__slogan {
-  @include font("Oswald",400,14px,14px);
+  @include font("Oswald", 400, 14px, 14px);
   text-align: center;
-  color: $white;
+  color: $color-white;
+  margin-top: 25px;
 }
 
 .promo__button {
-  background-color: $green;
+  background-color: $color-green;
 }
+
+.promo {
+  padding-top: 27px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__title {
+    @include font("Oswald", 400, 60px, 60px);
+    color: $color-black;
+  }
+  .promo__slogan {
+    @include font("Oswald", 400, 20px, 20px);
+    color: $color-black;
+    margin-top: 41px;
+
+  }
+}
+
+
