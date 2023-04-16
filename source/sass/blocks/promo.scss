@@ -25,12 +25,10 @@
     @include font("Oswald", 400, 60px, 60px);
     color: $color-black;
   }
+
   .promo__slogan {
     @include font("Oswald", 400, 20px, 20px);
     color: $color-black;
     margin-top: 41px;
-
   }
 }
-
-
