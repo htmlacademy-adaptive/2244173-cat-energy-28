@@ -1,3 +1,13 @@
+.title {
+  @include font("Oswald", 400, 36px, 36px);
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include font("Oswald", 400, 60px, 60px);
+    color: $color-black;
+  }
+}
+
 .title--header {
   font-family: "Oswald", sans-serif;
   font-weight: 400;

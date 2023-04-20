@@ -1,8 +1,6 @@
 .promo__title {
-  @include font("Oswald", 400, 36px, 36px);
   text-align: center;
   color: $color-white;
-  margin: 0;
 }
 
 .promo__slogan {
@@ -10,25 +8,24 @@
   text-align: center;
   color: $color-white;
   margin-top: 25px;
-}
+  text-transform: uppercase;
 
-.promo__button {
-  background-color: $color-green;
-}
-
-.promo {
-  padding-top: 27px;
-}
-
-@media (min-width: $tablet-width) {
-  .promo__title {
-    @include font("Oswald", 400, 60px, 60px);
-    color: $color-black;
-  }
-
-  .promo__slogan {
+  @media (min-width: $tablet-width) {
     @include font("Oswald", 400, 20px, 20px);
     color: $color-black;
     margin-top: 41px;
   }
+}
+
+.promo__button {
+  background-color: $color-green;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 244px;
+  }
+}
+
+.promo {
+  padding-top: 27px;
 }

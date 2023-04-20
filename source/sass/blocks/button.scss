@@ -1,5 +1,7 @@
 .button {
   @include font("Oswald",400,14px,18px);
+  display: flex;
+  justify-content: center;
   text-transform: uppercase;
   text-decoration: none;
   color: $color-white;

@@ -1,17 +1,21 @@
 .page-main__promo {
   background-color: rgba(104, 183, 56, 0.85);
-}
 
-.page-main__title {
-  @include font("Oswald", 400, 36px, 36px);
+  @media (min-width: $tablet-width) {
+    background-color: $color-white;
+  }
 }
 
 .page-main__programs {
   margin: 0 20px;
 }
 
-@media (min-width: $tablet-width) {
-  .page-main__promo {
-    background-color: $color-white;
-  }
+.page-main__catalog {
+  border-top: 1px solid $color-border;
+  margin-top: 41px;
+}
+
+.page-main__title-block {
+  padding-top: 27px;
+  border-top: 1px solid $color-border-top;
 }

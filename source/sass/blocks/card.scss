@@ -3,10 +3,30 @@
 }
 
 .card__information-item {
-  @include font("Lato",400,12px,16px);
+  @include font("Lato", 400, 12px, 16px);
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .card__order-button {
   background-color: $color-green;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 248px;
+  }
+}
+
+.card__container-image {
+  display: block;
+  width: 100%;
+  text-align: center;
+  align-self: center;
 }
