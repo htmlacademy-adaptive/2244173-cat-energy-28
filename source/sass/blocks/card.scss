@@ -33,6 +33,10 @@
   @media (min-width: $tablet-width) {
     width: 248px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 168px;
+  }
 }
 
 .card__container-image {

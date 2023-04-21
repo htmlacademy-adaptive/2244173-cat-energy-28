@@ -4,7 +4,7 @@
 }
 
 .site-nav__link {
-  @include font("Oswald, sans-serif", 500, 20px, 20px);
+  @include font("Oswald", 500, 20px, 20px);
   text-decoration: none;
   color: $color-black;
 }
@@ -19,7 +19,7 @@
   }
 
   .site-nav__item {
-    @include font("Oswald, sans-serif", 400, 18px, 24px);
+    @include font("Oswald", 400, 18px, 24px);
   }
 }
 

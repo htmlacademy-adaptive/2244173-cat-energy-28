@@ -1,3 +1,28 @@
 .program-selection__description {
   @include font("Oswald",400,14px,18px);
+  margin: 0 0 39px 0;
+  width: 226px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 323px;
+    margin-bottom: 66px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+.program-selection__title {
+  margin: 0 0 37px 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
 }

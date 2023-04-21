@@ -1,13 +1,23 @@
+.page-main__container {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
+}
+
 .page-main__promo {
   background-color: rgba(104, 183, 56, 0.85);
 
   @media (min-width: $tablet-width) {
     background-color: $color-white;
   }
-}
-
-.page-main__programs {
-  margin: 0 20px;
 }
 
 .page-main__catalog {
