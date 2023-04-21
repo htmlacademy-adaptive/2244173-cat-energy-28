@@ -13,9 +13,17 @@
 .page-main__catalog {
   border-top: 1px solid $color-border;
   margin-top: 41px;
+
+  @media (min-width: $tablet-width) {
+    border:none;
+  }
 }
 
 .page-main__title-block {
   padding-top: 27px;
   border-top: 1px solid $color-border-top;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }

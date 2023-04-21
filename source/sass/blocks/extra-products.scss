@@ -6,6 +6,10 @@
   @media (min-width: $tablet-width) {
     width: 632px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+  }
 }
 
 .extra-products__list {
@@ -27,9 +31,15 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding: 13px 0 20px;
+    border-bottom: 1px solid $color-grey-cd;
+  }
+
+  @media (min-width: $desktop-width) {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    column-gap: 40px;
+    padding: 14px 0 16px;
   }
 }
 
@@ -38,12 +48,26 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 50px;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: auto 0;
+    justify-content: space-between;
+  }
 }
 
 .extra-products__title {
   line-height: 16px;
   padding: 0;
   margin: 0 0 13px 0;
+
+  @media (min-width: $desktop-width) {
+    margin: auto 0;
+  }
 }
 
 .extra-products__promo {
@@ -52,6 +76,20 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 63px 124px 57px 88px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 55px 43px 42px 41px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .extra-products__present-text {
@@ -59,9 +97,38 @@
   color: $color-white;
   text-align: center;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width)  {
+    width: 160px;
+    margin: 0;
+  }
 }
 
 .extra-products-image {
   display: block;
   margin: 0 auto 48px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.extra-products__container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    column-gap: 80px;
+  }
+}
+
+.extra-products__wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 567px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

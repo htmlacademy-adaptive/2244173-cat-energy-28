@@ -1,8 +1,9 @@
 .page-footer__contacts {
   display: flex;
   justify-content: space-between;
-  padding-top: 26px;
-  padding-bottom: 26px;
+  padding: 26px 0 26px 0;
+  margin-top: 35px;
+  background-color: $color-grey-f2;
 
   @media (min-width: $tablet-width) {
     padding: 0 70px;
