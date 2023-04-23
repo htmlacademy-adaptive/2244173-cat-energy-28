@@ -1,4 +1,4 @@
-.title {
+.title--base {
   @include font("Oswald", 400, 36px, 36px);
   margin: 0;
 
@@ -39,4 +39,8 @@
 
 .title--text {
   @include font("Oswald", 400, 36px, 40px);
+
+  @media (min-width: $tablet-width) {
+    @include font("Oswald", 400, 60px, 60px);
+  }
 }
