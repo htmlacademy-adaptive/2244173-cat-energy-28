@@ -34,4 +34,12 @@
   padding: 10px 0;
   width: 279px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 249px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+  }
 }

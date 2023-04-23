@@ -58,6 +58,8 @@
 .catalog__container {
   display: flex;
   margin-bottom: 13px;
+  flex-direction: column;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
