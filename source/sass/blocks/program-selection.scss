@@ -1,7 +1,24 @@
-.program-selection__title {
-  @include font("Oswald, sans-serif",400,36px,36px);
+.program-selection__description {
+  @include font("Oswald",400,14px,18px);
+  margin: 0 0 39px 0;
+  width: 226px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 323px;
+    margin: 0 40px 66px 40px;
+  }
 }
 
-.program-selection__description {
-  @include font("Oswald, sans-serif",400,14px,18px);
+.program-selection__title {
+  margin: 0 0 37px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 40px 54px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
 }

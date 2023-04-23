@@ -1,0 +1,11 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo-toggle {
+    display: none;
+  }
+}

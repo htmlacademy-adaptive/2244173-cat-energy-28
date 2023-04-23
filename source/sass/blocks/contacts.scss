@@ -1,8 +1,21 @@
 .contacts__invite {
   line-height: 20px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 172px;
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .contacts__address {
-  @include font("Lato, sans-serif",400,14px,20px);
-  color: $grey-dark;
+  @include font("Lato", 400, 14px, 20px);
+  color: $color-grey-dark;
+  align-self: center;
+
+  @media (min-width: $tablet-width) {
+    width: 160px;
+    font-size: 16px;
+  }
 }

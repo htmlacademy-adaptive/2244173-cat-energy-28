@@ -1,0 +1,24 @@
+.field-checkbox {
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px 54px;
+  }
+}
+
+.field-checkbox__list {
+  display: grid;
+  margin-bottom: 40px;
+  grid-template-columns: 1fr;
+  row-gap: 25px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 42px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

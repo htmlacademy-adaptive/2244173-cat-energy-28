@@ -1,0 +1,22 @@
+.field-radio {
+  margin-bottom: 75px;
+}
+
+.field-radio__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  margin: 27px 20px;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $color-border-top;
+    padding: 25px 0 25px 28px;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

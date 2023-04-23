@@ -1,4 +1,27 @@
 .site-nav__item {
-  @include font("Oswald, sans-serif",500,20px,20px);
-  list-style: none;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font("Oswald", 400, 18px, 24px);
+  }
+}
+
+.site-nav__link {
+  @include font("Oswald", 500, 20px, 20px);
+  text-decoration: none;
+  color: $color-black;
+}
+
+.site-nav__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 110px;
+  }
 }

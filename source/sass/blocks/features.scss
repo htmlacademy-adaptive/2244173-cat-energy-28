@@ -1,0 +1,31 @@
+.features__title {
+  margin: 20px 0 40px 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 45px 0 32px 31px;
+  }
+}
+
+.features__list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 37px 153px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    column-gap: 94px;
+  }
+}
+
+.features__item {
+  margin-left: 100px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}

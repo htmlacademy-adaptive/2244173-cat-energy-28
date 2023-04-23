@@ -1,13 +1,55 @@
 .programs__item {
-  background-color: $grey-f2;
-  list-style: none;
+  background-color: $color-grey-f2;
+  padding-left: 20px;
+  margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 52px;
+  }
 }
 
 .programs__link {
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.programs__list {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 570px 570px;
+    justify-content: space-between;
+    margin: 0 110px;
+  }
 }
 
 .programs__title {
   font-size: 24px;
   line-height: 37px;
+  text-align: center;
+  margin: 0;
+  padding: 30px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    text-align: inherit;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
+}
+
+.programs__description {
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 340px;
+  }
 }

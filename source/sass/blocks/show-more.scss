@@ -1,18 +1,40 @@
 .show-more__title {
   line-height: 20px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 170px;
+  }
 }
 
 .show-more__text {
-  @include font("Lato, sans-serif",400,12px,16px);
-  color: $grey-dark;
+  @include font("Lato",400,12px,16px);
+  color: $color-grey-dark;
+  margin: 0 0 20px 0;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0 auto;
+    margin-bottom: 87px;
+    font-weight: 400;
+    width: 165px;
+  }
 }
 
 .show-more__button {
   font-weight: 400;
   line-height: 20px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: $grey-dark;
-  background-color: $grey-f2;
-  padding: 10px 94px;
+  color: $color-grey-dark;
+  background-color: $color-grey-f2;
+  width: 279px;
+
+  @media (min-width: $tablet-width) {
+    width: 249px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+  }
 }

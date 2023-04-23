@@ -1,0 +1,12 @@
+.form-info {
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-bottom: 72px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+}
