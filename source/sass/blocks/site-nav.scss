@@ -1,6 +1,9 @@
 .site-nav__item {
-  list-style: none;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font("Oswald", 400, 18px, 24px);
+  }
 }
 
 .site-nav__link {
@@ -9,8 +12,8 @@
   color: $color-black;
 }
 
-@media (min-width: $tablet-width) {
-  .site-nav__list {
+.site-nav__list {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -18,13 +21,7 @@
     margin-right: 30px;
   }
 
-  .site-nav__item {
-    @include font("Oswald", 400, 18px, 24px);
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .site-nav__list {
+  @media (min-width: $desktop-width) {
     margin-right: 110px;
   }
 }

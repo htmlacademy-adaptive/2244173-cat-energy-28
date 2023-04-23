@@ -15,7 +15,6 @@
 
 .card__information-item {
   @include font("Lato", 400, 12px, 16px);
-  list-style: none;
   display: flex;
   justify-content: space-between;
 
