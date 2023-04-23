@@ -7,9 +7,7 @@
     font-size: 20px;
     line-height: 30px;
     width: 323px;
-    margin-bottom: 66px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 0 40px 66px 40px;
   }
 }
 
@@ -17,9 +15,7 @@
   margin: 0 0 37px 0;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 54px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 0 40px 54px 40px;
   }
 
   @media (min-width: $desktop-width) {

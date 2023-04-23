@@ -71,12 +71,7 @@
 
   @media (min-width: $tablet-width) {
     width: 590px;
-    margin-bottom: 76px;
-    padding: 0 36px 0 37px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0;
+    margin: 0 36px 76px 37px;
   }
 }
 

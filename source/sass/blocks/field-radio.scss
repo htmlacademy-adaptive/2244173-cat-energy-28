@@ -3,16 +3,14 @@
 }
 
 .field-radio__list {
-  list-style: none;
-  margin: 0;
   display: flex;
   flex-direction: column;
   row-gap: 25px;
-  padding: 27px 20px;
+  margin: 27px 20px;
 
   @media (min-width: $tablet-width) {
     border: 1px solid $color-border-top;
-    padding-top: 30px;
+    padding: 25px 0 25px 28px;
     margin-left: 60px;
     margin-right: 60px;
   }

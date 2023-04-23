@@ -3,10 +3,13 @@
   border: none;
   width: 280px;
 
+  @media (min-width: $tablet-width) {
+    width: 282px;
+    padding: 13px;
+  }
+
   @media (min-width: $desktop-width) {
-    width: 100%;
-    max-width: 568px;
-    padding: 17px 44px;
+    width: 568px;
   }
 }
 
