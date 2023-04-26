@@ -10,8 +10,11 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <div class="page-header__logo-container">
+  <header class="page-header page-header--nojs">
+    <div class="page-header__logo-container ">
+      <a href="#" class="page-header__logo">
+        <img class="page-header__image-logo" src="./img/logo-mobile.svg" alt="" width="191" height="38">
+      </a>
       <button class="page-header__logo-toggle">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -19,7 +22,7 @@
     <nav class="page-header__nav site-nav">
       <ul class="site-nav__list list">
         <li class="site-nav__item">
-          <a class="site-nav__link site-nav__link--active" href="index.html">главная</a>
+          <a class="site-nav__link site-nav__link--active site-nav__link--current" href="index.html">главная</a>
         </li>
         <li class="site-nav__item">
           <a class="site-nav__link" href="catalog.html">Каталог продукции</a>
@@ -146,6 +149,7 @@
       </div>
     </section>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

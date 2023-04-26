@@ -1,6 +1,10 @@
 .promo__title {
   text-align: center;
   color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    color: $color-black;
+  }
 }
 
 .promo__slogan {
