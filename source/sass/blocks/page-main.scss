@@ -12,11 +12,21 @@
   }
 }
 
-.page-main__promo {
-  background-color: rgba(104, 183, 56, 0.85);
+/* .page-main__promo {
+  @media (min-width: $tablet-width) {
+    background-color: $color-white;
+  }
+} */
+
+.page-main__wrapper {
+  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85) 302px, transparent 302px), url("../../img/index-background-cat.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100% auto;
+  padding-top: 27px;
 
   @media (min-width: $tablet-width) {
     background-color: $color-white;
+    background-image: none;
   }
 }
 
@@ -36,4 +46,9 @@
   @media (min-width: $tablet-width) {
     border: none;
   }
+}
+
+.page-main__programs {
+  padding: 0 20px;
+  margin-bottom: 20px;
 }

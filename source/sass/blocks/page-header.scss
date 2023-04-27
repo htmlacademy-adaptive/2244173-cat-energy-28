@@ -11,12 +11,6 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .page-header__logo-toggle {
-    display: none;
-  }
-}
-
 .page-header__logo-container {
   display: flex;
   justify-content: space-between;
@@ -34,6 +28,10 @@
   margin-left: auto;
   background-color: $color-white;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 
@@ -51,7 +49,6 @@
 }
 
 .page-header--opened .page-header__logo-toggle {
-
   &::before,
   &::after {
     content: "";

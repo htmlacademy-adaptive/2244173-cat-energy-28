@@ -24,12 +24,16 @@
 .promo__button {
   background-color: $color-green;
   width: 280px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 244px;
   }
 }
 
-.promo {
-  padding-top: 27px;
+.promo__image {
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto 2px;
 }

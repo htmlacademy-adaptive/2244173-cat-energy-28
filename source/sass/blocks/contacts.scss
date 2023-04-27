@@ -12,7 +12,7 @@
 .contacts__address {
   @include font("Lato", 400, 14px, 20px);
   color: $color-grey-dark;
-  align-self: center;
+  font-style: normal;
 
   @media (min-width: $tablet-width) {
     width: 160px;

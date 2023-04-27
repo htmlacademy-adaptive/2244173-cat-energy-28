@@ -1,5 +1,6 @@
 .story {
-  background-color: $color-grey-ed;
+  background-color: $color-background-story;
+  padding: 25px 0 40px 0;
 
   @media (min-width: $tablet-width) {
     background-color: $color-white;
@@ -34,7 +35,8 @@
 .story__list {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin: 0 0 34px 0;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
@@ -54,16 +56,18 @@
 }
 
 .story__item {
-  width: 124px;
-  height: 56px;
-  padding-top: 15px;
+  position: relative;
+  min-width: 124px;
   text-align: center;
-  box-sizing: border-box;
   border: 1px solid $color-grey-cd;
   border-radius: 3px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .story__wrapper {
+  padding: 0 20px;
+
   @media (min-width: $desktop-width) {
     background-color: $color-grey-f2;
     padding-top: 70px;
@@ -72,12 +76,30 @@
 
 .story__value {
   @include font("Oswald", 400, 24px, 24px);
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 .story__description {
-  @include font("Oswald", 400, 12px, 12px);
+  @include font("Lato", 400, 12px, 12px);
+  padding: 0 15px;
+  position: absolute;
+  bottom: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $color-background-story;
+  text-align: center;
+  color: $color-grey-dark;
+
+  @media (min-width: $desktop-width) {
+    background-color: $color-grey-f2;
+  }
 }
+
 
 .story__item-costs {
   @include font("Oswald", 400, 14px, 20px);
+  text-align: center;
+  margin-bottom: 20px;
 }
