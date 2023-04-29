@@ -12,13 +12,8 @@
   }
 }
 
-/* .page-main__promo {
-  @media (min-width: $tablet-width) {
-    background-color: $color-white;
-  }
-} */
-
 .page-main__wrapper {
+  position: relative;
   background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85) 302px, transparent 302px), url("../../img/index-background-cat.png");
   background-repeat: no-repeat, no-repeat;
   background-size: 320px 302px;
@@ -26,6 +21,13 @@
 
   @media (min-width: $tablet-width) {
     background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 472px 540px;
+    grid-template-rows: auto auto auto auto;
+    padding: 0 110px;
   }
 }
 
@@ -53,5 +55,28 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
+}
+
+.page-main__promo {
+  @media (min-width: $desktop-width) {
+    padding-top: 110px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85) 720px, transparent 720px), url("../../img/index-background-cat.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 50%;
+      height: 694px;
+      z-index: -1;
+    }
   }
 }

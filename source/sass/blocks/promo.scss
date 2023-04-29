@@ -8,6 +8,11 @@
     margin-left: 12%;
     width: 71%;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+    width: 100%;
+  }
 }
 
 .promo__slogan {
@@ -23,6 +28,11 @@
     margin-top: 41px;
     text-align: left;
     margin-left: 12%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    margin-bottom: 52px;
   }
 }
 
@@ -40,6 +50,12 @@
     padding: 17px 0;
     margin-bottom: 526px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin-bottom: 267px;
+  }
 }
 
 .promo__image {
@@ -55,5 +71,12 @@
     transform: translateX(-50%);
     bottom: -100px;
     z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    z-index: 0;
+    position: static;
+    grid-column: 2/3;
+    grid-row: 1/5;
   }
 }
