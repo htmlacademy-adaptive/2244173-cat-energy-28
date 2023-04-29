@@ -6,6 +6,15 @@
   @media (min-width: $tablet-width) {
     padding: 60px 70px;
   }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    z-index: 1;
+    background-color: $color-white;
+    margin-left: 110px;
+    margin-top: 90px;
+    column-gap: 85px;
+  }
 }
 
 .page-footer__info {
@@ -16,6 +25,10 @@
   @media (min-width: $tablet-width) {
     flex-direction: inherit;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
   }
 }
 

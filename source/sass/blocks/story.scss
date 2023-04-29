@@ -1,10 +1,14 @@
 .story {
   background-color: $color-background-story;
-  padding: 25px 0 40px 0;
+  padding: 25px 20px 40px 20px;
 
   @media (min-width: $tablet-width) {
     background-color: $color-white;
     padding: 43px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
@@ -21,6 +25,16 @@
   }
 }
 
+.story__title-container {
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
+}
+
 .story__history {
   margin-bottom: 20px;
 
@@ -30,7 +44,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 436px;
+    padding-top: 70px;
+    padding-bottom: 69px;
+    margin: 0;
+    width: 433px;
   }
 }
 
@@ -44,6 +61,10 @@
     justify-content: flex-start;
     gap: 42px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .story__container-list {
@@ -54,6 +75,8 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
+    align-items: start;
+    gap: 47px;
   }
 }
 
@@ -72,15 +95,21 @@
 }
 
 .story__wrapper {
-  padding: 0 20px;
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: $color-grey-f2;
+    margin: 0 auto;
+  }
+}
 
+.story__box {
   @media (min-width: $tablet-width) {
     padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $color-grey-f2;
-    padding-top: 70px;
+    padding: 0 110px;
   }
 }
 
@@ -132,6 +161,14 @@
     text-align: end;
     gap: 9px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 80px;
+    padding-bottom: 75px;
+  }
 }
 
 .story__description--weight {
@@ -148,4 +185,8 @@
 
 .story__slider {
   background-color: $color-background-story;
+
+  @media (min-width: $desktop-width) {
+    background-color: $color-grey-f2;
+  }
 }
