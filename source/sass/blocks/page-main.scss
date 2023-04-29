@@ -21,11 +21,10 @@
 .page-main__wrapper {
   background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85) 302px, transparent 302px), url("../../img/index-background-cat.png");
   background-repeat: no-repeat, no-repeat;
-  background-size: 100% auto;
+  background-size: 320px 302px;
   padding-top: 27px;
 
   @media (min-width: $tablet-width) {
-    background-color: $color-white;
     background-image: none;
   }
 }

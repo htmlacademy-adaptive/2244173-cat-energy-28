@@ -4,6 +4,9 @@
 
   @media (min-width: $tablet-width) {
     color: $color-black;
+    text-align: left;
+    margin-left: 12%;
+    width: 71%;
   }
 }
 
@@ -18,6 +21,8 @@
     @include font("Oswald", 400, 20px, 20px);
     color: $color-black;
     margin-top: 41px;
+    text-align: left;
+    margin-left: 12%;
   }
 }
 
@@ -28,6 +33,12 @@
 
   @media (min-width: $tablet-width) {
     width: 244px;
+    margin: 0;
+    margin-left: 12%;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 17px 0;
+    margin-bottom: 526px;
   }
 }
 
@@ -36,4 +47,13 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0 auto 2px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -100px;
+    z-index: -1;
+  }
 }

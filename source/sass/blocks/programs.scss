@@ -4,7 +4,8 @@
   margin-top: 20px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 52px;
+    padding: 77px 61px 57px 52px;
+    margin-top: 30px;
   }
 }
 
@@ -18,6 +19,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    width: 165px;
   }
 }
 
@@ -41,6 +43,7 @@
     font-size: 36px;
     line-height: 36px;
     text-align: inherit;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -58,6 +61,8 @@
     font-size: 16px;
     line-height: 24px;
     width: 340px;
+    position: relative;
+    border: none;
   }
 }
 
@@ -73,6 +78,12 @@
     width: 50px;
     height: 53px;
   }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .programs__title--pro {
@@ -86,5 +97,43 @@
     left: -7px;
     width: 67px;
     height: 53px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.programs__description--slim {
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../../img/cat-weight.png");
+      background-repeat: no-repeat;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -100%;
+      width: 200px;
+      height: 53px;
+    }
+  }
+}
+
+.programs__description--pro {
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../../img/cat-mass.png");
+      background-repeat: no-repeat;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -100%;
+      width: 200px;
+      height: 53px;
+    }
   }
 }
