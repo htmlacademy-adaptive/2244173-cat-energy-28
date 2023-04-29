@@ -1,6 +1,13 @@
 .features {
   padding: 0 20px;
   margin-bottom: 53px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    margin: 0;
+    padding-bottom: 47px;
+    border-bottom: solid 1px $color-nav-border;
+  }
 }
 
 .features__title {
@@ -16,7 +23,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
-    gap: 37px 153px;
+    gap: 37px 154px;
   }
 
   @media (min-width: $desktop-width) {
@@ -38,6 +45,19 @@
   &:not(:last-child) {
     margin-bottom: 20px;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 151px 26px 57px 0;
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.features__item-text {
+  margin: 0;
 }
 
 .features__item--sheet {
@@ -52,6 +72,18 @@
     left: 0;
     width: 60px;
     height: 60px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      top: 40px;
+      width: 80px;
+      height: 80px;
+    }
+
+    background-image: url("../../img/1.png");
+    background-repeat: no-repeat;
+    background-position: 125px 40px;
   }
 }
 
@@ -68,6 +100,18 @@
     width: 60px;
     height: 60px;
   }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      top: 40px;
+      width: 80px;
+      height: 80px;
+    }
+
+    background-image: url("../../img/2.png");
+    background-repeat: no-repeat;
+    background-position: 125px 40px;
+  }
 }
 
 .features__item--food {
@@ -83,6 +127,18 @@
     width: 60px;
     height: 60px;
   }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      top: 40px;
+      width: 80px;
+      height: 80px;
+    }
+
+    background-image: url("../../img/3.png");
+    background-repeat: no-repeat;
+    background-position: 125px 40px;
+  }
 }
 
 .features__item--time {
@@ -97,5 +153,17 @@
     left: 0;
     width: 60px;
     height: 60px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      top: 40px;
+      width: 80px;
+      height: 80px;
+    }
+
+    background-image: url("../../img/4.png");
+    background-repeat: no-repeat;
+    background-position: 125px 40px;
   }
 }
