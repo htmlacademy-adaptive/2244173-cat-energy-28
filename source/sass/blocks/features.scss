@@ -8,6 +8,12 @@
     padding-bottom: 47px;
     border-bottom: solid 1px $color-nav-border;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+    border-bottom: none;
+    margin-bottom: 69px;
+  }
 }
 
 .features__title {
@@ -15,6 +21,11 @@
 
   @media (min-width: $tablet-width) {
     margin: 45px 0 32px 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-bottom: 32px;
   }
 }
 
@@ -30,7 +41,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
-    column-gap: 94px;
+    column-gap: 80px;
   }
 }
 
@@ -53,6 +64,11 @@
     &:not(:last-child) {
       margin-bottom: 0;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    padding-right: 0;
   }
 }
 
