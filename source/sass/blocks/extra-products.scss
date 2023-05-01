@@ -109,6 +109,12 @@
 }
 
 .extra-products__container {
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     column-gap: 80px;
@@ -123,5 +129,24 @@
 
   @media (min-width: $desktop-width) {
     width: 567px;
+  }
+}
+
+.extra-products__subtitle {
+  position: relative;
+  background-color: $color-white;
+  width: max-content;
+  padding-right: 21px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    width: 100vw;
+    height: 2px;
+    background-color: $color-green;
+    z-index: -1;
+    left: 0;
   }
 }

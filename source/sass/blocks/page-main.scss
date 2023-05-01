@@ -16,7 +16,7 @@
   position: relative;
   background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85) 302px, transparent 302px), url("../../img/index-background-cat.png");
   background-repeat: no-repeat, no-repeat;
-  background-size: 320px 302px;
+  background-position: top center;
   padding-top: 27px;
 
   @media (min-width: $tablet-width) {
@@ -37,6 +37,8 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+    padding: 0 30px;
+    margin-bottom: 68px;
   }
 }
 
@@ -46,6 +48,9 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+    padding: 0 30px;
+    margin-top: 72px;
+    margin-bottom: 118px;
   }
 }
 
@@ -72,12 +77,20 @@
       position: absolute;
       top: 0;
       right: 0;
-      background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85) 720px, transparent 720px), url("../../img/index-background-cat.png");
+      background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85) 720px, transparent 720px), url("../../img/index-background-desktop.png");
       background-repeat: no-repeat;
       background-size: 100%;
       width: 50%;
       height: 694px;
       z-index: -1;
     }
+  }
+}
+
+.page-main__extra-products {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
   }
 }

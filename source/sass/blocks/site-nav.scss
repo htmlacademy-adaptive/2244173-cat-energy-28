@@ -21,6 +21,11 @@
 
   @media (min-width: $desktop-width) {
     @include font("Oswald", 400, 20px, 30px);
+  }
+}
+
+.site-nav__link--color {
+  @media (min-width: $desktop-width) {
     color: $color-white;
   }
 }
@@ -38,12 +43,14 @@
   }
 }
 
-.site-nav__link--current {
+.site-nav__link--active {
   @media (min-width: $tablet-width) {
     padding-bottom: 10px;
     border-bottom: 2px solid $color-green;
   }
+}
 
+.site-nav__link--current {
   @media (min-width: $desktop-width) {
     border-bottom: 2px solid $color-white;
   }

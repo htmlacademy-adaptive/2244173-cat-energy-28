@@ -10,8 +10,11 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <div class="page-header__logo-container">
+  <header class="page-header page-header--closed page-header--nojs">
+    <div class="page-header__logo-container ">
+      <a href="#" class="page-header__logo">
+        <img class="page-header__image-logo" src="./img/logo-mobile.svg" alt="" width="191" height="38">
+      </a>
       <button class="page-header__logo-toggle">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -19,10 +22,10 @@
     <nav class="page-header__nav site-nav">
       <ul class="site-nav__list list">
         <li class="site-nav__item">
-          <a class="site-nav__link site-nav__link--active title title--header" href="index.html">главная</a>
+          <a class="site-nav__link  title title--header" href="index.html">главная</a>
         </li>
         <li class="site-nav__item">
-          <a class="site-nav__link title title--header site-nav__link--current" href="catalog.html">Каталог продукции</a>
+          <a class="site-nav__link title site-nav__link--active title--header" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="site-nav__item">
           <a class="site-nav__link title title--header" href="form.html">Подбор программы</a>
@@ -289,10 +292,13 @@
     </section>
   </main>
   <footer class="page-footer">
-    <section class="page-footer__contacts contacts">
+    <section class="page-footer__contacts contacts contacts__container">
       <h2 class="visually-hidden">Контакты</h2>
       <p class="contacts__invite title title--header">приглашаем к сотрудничеству дилеров!</p>
-      <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <div class="contacts__wrapper">
+        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8</address>
+        <address class="contacts__address">Санкт-Петербург</address>
+      </div>
     </section>
     <div class="page-footer__map map">
       <iframe class="map__interactive"
@@ -349,6 +355,7 @@
       </div>
     </section>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
