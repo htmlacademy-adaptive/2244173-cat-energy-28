@@ -30,6 +30,10 @@
   background-color: $color-grey-f2;
   width: 279px;
 
+  &:hover {
+    background-color: $color-border;
+  }
+
   @media (min-width: $tablet-width) {
     width: 249px;
   }
