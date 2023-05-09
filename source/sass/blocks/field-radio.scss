@@ -28,7 +28,7 @@
   cursor: pointer;
 }
 
-.field-radio__input[type=radio]:checked + .field-radio__label {
+.field-radio__input[type="radio"]:checked + .field-radio__label {
   &::before {
     position: absolute;
     top: 50%;
@@ -39,7 +39,6 @@
     background-color: #68b738;
     border-radius: 50%;
     content: "";
-
   }
 }
 
