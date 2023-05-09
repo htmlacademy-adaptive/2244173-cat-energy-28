@@ -1,9 +1,5 @@
 .field-checkbox {
   border: none;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 40px 54px;
-  }
 }
 
 .field-checkbox__list {
@@ -16,6 +12,7 @@
     grid-template-columns: 1fr 1fr;
     row-gap: 42px;
     margin-bottom: 0;
+    padding: 0 40px 54px;
   }
 
   @media (min-width: $desktop-width) {
