@@ -1,6 +1,18 @@
 .promo__title {
   text-align: center;
   color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    color: $color-black;
+    text-align: left;
+    margin-left: 12%;
+    width: 71%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+    width: 100%;
+  }
 }
 
 .promo__slogan {
@@ -14,18 +26,55 @@
     @include font("Oswald", 400, 20px, 20px);
     color: $color-black;
     margin-top: 41px;
+    text-align: left;
+    margin-left: 12%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    margin-bottom: 52px;
   }
 }
 
 .promo__button {
   background-color: $color-green;
   width: 280px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 244px;
+    margin: 0;
+    margin-left: 12%;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 17px 0;
+    margin-bottom: 526px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin-bottom: 267px;
   }
 }
 
-.promo {
-  padding-top: 27px;
+.promo__image {
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto 2px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    z-index: 0;
+    position: static;
+    grid-column: 2/3;
+    grid-row: 1/5;
+  }
 }

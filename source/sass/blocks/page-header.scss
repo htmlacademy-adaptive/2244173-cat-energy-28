@@ -2,10 +2,111 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  padding: 10px 20px 17px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding: 0 30px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 53px 110px 0 110px;
+    background-color: transparent;
+  }
 }
 
-@media (min-width: $tablet-width) {
-  .page-header__logo-toggle {
+.page-header__logo-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header__logo {
+  height: 38px;
+
+  @media (min-width: $desktop-width) {
+    height: 59px;
+  }
+}
+
+.page-header__logo-toggle {
+  border: none;
+  padding: 0;
+  height: 38px;
+  width: 28px;
+  margin-left: auto;
+  background-color: $color-white;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+
+.page-header--closed .page-header__logo-toggle {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    right: 20px;
+    width: 24px;
+    height: 2px;
+    background-color: $color-black;
+    box-shadow: 0 8px 0 0 $color-black, 0 16px 0 0 $color-black;
+  }
+}
+
+.page-header--opened .page-header__logo-toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 28px;
+    height: 2px;
+    background-color: $color-black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .page-header--closed .site-nav__item {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .page-header--opened .site-nav {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background-color: $color-white;
+    z-index: 2;
+  }
+}
+
+.page-header--nojs .page-header__logo-toggle {
+  display: none;
+}
+
+
+.page-header--nojs .site-nav__list {
+  display: block;
+  position: static;
+  min-height: 0;
+}
+
+.page-header--nojs .site-nav__item {
+  display: block;
 }

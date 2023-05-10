@@ -12,10 +12,25 @@
 .contacts__address {
   @include font("Lato", 400, 14px, 20px);
   color: $color-grey-dark;
-  align-self: center;
+  font-style: normal;
 
   @media (min-width: $tablet-width) {
     width: 160px;
     font-size: 16px;
   }
+}
+
+.contacts__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 170px;
+    text-align: end;
+    margin-left: auto;
+  }
+}
+
+.contacts__container {
+  background-color: $color-grey-f2;
 }
