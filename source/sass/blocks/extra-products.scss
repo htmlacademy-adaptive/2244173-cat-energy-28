@@ -67,23 +67,37 @@
 
 .extra-products__promo {
   padding: 60px 60px 48px 60px;
-  background-image: url("../../img/gift-background.png");
+  background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85) 100%), url("../../img/catalog/catalog-cat-mobile@1x.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/catalog/catalog-cat-mobile@2x.png");
+  }
+
   @media (min-width: $tablet-width) {
+    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85) 100%), url("../../img/catalog/catalog-cat-tablet@1x.png");
     padding: 63px 124px 57px 88px;
     display: flex;
     justify-content: space-between;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/catalog/catalog-cat-tablet@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
+    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85) 100%), url("../../img/catalog/catalog-cat-desktop@1x.png");
     padding: 55px 43px 42px 41px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/catalog/catalog-cat-desktop@2x.png");
+    }
   }
 }
 

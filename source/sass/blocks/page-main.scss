@@ -37,11 +37,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 472px 540px;
-    grid-template-rows: auto auto auto auto;
     padding: 0 110px;
-    background-image: none;
   }
 }
 
