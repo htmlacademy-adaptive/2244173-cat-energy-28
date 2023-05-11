@@ -10,8 +10,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 40px;
-    width: 100%;
+    margin: 0 0 40px 80px;
+    width: 420px;
   }
 }
 
@@ -31,8 +31,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 0;
-    margin-bottom: 52px;
+    margin: 0 0 52px 80px;
   }
 }
 
@@ -52,15 +51,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 1/2;
-    grid-row: 3/4;
-    margin-bottom: 267px;
+    margin: 0 0 267px 80px;
   }
 }
 
 .promo__image {
   display: block;
-  text-transform: uppercase;
   text-align: center;
   margin: 0 auto 2px;
 
@@ -72,9 +68,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    z-index: 0;
-    position: static;
-    grid-column: 2/3;
-    grid-row: 1/5;
+    top: -73px;
+    left: 58%;
   }
 }

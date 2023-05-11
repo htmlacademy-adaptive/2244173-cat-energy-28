@@ -88,13 +88,18 @@
   &::before {
     content: "";
     position: absolute;
-    background-image: url("../../img/cat-weight.png");
+    background-image: url("../../img/content/cat-weight.png");
     background-repeat: no-repeat;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
     width: 50px;
     height: 53px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/content/cat-weight@2x.png");
+      background-size: 50px 53px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -106,6 +111,14 @@
   @media (min-width: $desktop-width) {
     &::before {
       display: block;
+      background-image: url("../../img/content/cat-weight-desktop.png");
+      width: 100px;
+      height: 106px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/content/cat-weight-desktop@2x.png");
+        background-size: 100px 106px;
+      }
     }
   }
 }
@@ -114,13 +127,18 @@
   &::before {
     content: "";
     position: absolute;
-    background-image: url("../../img/cat-mass.png");
+    background-image: url("../../img/content/cat-mass.png");
     background-repeat: no-repeat;
     top: 50%;
     transform: translateY(-50%);
     left: -7px;
     width: 67px;
-    height: 53px;
+    height: 50px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/content/cat-mass@2x.png");
+      background-size: 67px 50px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -132,6 +150,14 @@
   @media (min-width: $desktop-width) {
     &::before {
       display: block;
+      background-image: url("../../img/content/cat-mass-desktop.png");
+      width: 134px;
+      height: 100px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/content/cat-mass-desktop@2x.png");
+        background-size: 134px 100px;
+      }
     }
   }
 }
@@ -141,13 +167,18 @@
     &::before {
       content: "";
       position: absolute;
-      background-image: url("../../img/cat-weight.png");
+      background-image: url("../../img/content/cat-weight-tablet.png");
       background-repeat: no-repeat;
       top: 50%;
       transform: translateY(-50%);
       right: -100%;
       width: 200px;
-      height: 53px;
+      height: 200px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/content/cat-weight-tablet@2x.png");
+        background-size: 200px 200px;
+      }
     }
   }
 
@@ -163,13 +194,18 @@
     &::before {
       content: "";
       position: absolute;
-      background-image: url("../../img/cat-mass.png");
+      background-image: url("../../img/content/cat-mass-tablet.png");
       background-repeat: no-repeat;
       top: 50%;
       transform: translateY(-50%);
       right: -100%;
-      width: 200px;
-      height: 53px;
+      width: 268px;
+      height: 200px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/content/cat-mass-tablet@2x.png");
+        background-size: 268px 200px;
+      }
     }
   }
 
