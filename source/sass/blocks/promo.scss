@@ -65,10 +65,14 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;
+    width: 709px;
+    height: 609px;
   }
 
   @media (min-width: $desktop-width) {
     top: -73px;
     left: 58%;
+    width: 552px;
+    height: 499px;
   }
 }
