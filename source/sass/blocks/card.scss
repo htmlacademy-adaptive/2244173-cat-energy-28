@@ -3,6 +3,8 @@
 }
 
 .card__title {
+  width: 90px;
+
   @media (min-width: $tablet-width) {
     text-align: center;
     padding-top: 161px;
@@ -19,9 +21,14 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
+    font-size: 16px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-bottom: 9px;
+    padding-top: 7px;
+    border-bottom: 1px solid $color-grey-cd;
+    text-align: center;
   }
 }
 
@@ -48,5 +55,13 @@
     text-align: center;
     position: absolute;
     top: -45px;
+  }
+}
+
+.card-image {
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 }

@@ -53,14 +53,19 @@
 }
 
 .page-main__title-block {
-  padding-top: 27px;
   border-top: 1px solid $color-border-top;
+  padding: 27px 0 0 20px;
 
   @media (min-width: $tablet-width) {
     border: none;
     padding: 0 30px;
     margin-top: 72px;
     margin-bottom: 118px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+    margin-bottom: 165px;
   }
 }
 
