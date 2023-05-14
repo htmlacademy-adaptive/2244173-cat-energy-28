@@ -51,6 +51,7 @@
 }
 
 .form-field__input {
+  position: relative;
   font-size: 16px;
   line-height: 18px;
   width: 100%;
@@ -70,6 +71,28 @@
     font-size: 20px;
     line-height: 30px;
     padding: 10px 20px 10px;
+  }
+}
+
+.form-field__email {
+  background-image: url("../../img/sprite.svg#mail");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: 90% center;
+
+  @media (min-width: $tablet-width) {
+    background-position: 97% center;
+  }
+}
+
+.form-field__phone {
+  background-image: url("../../img/sprite.svg#phone");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: 90% center;
+
+  @media (min-width: $tablet-width) {
+    background-position: 97% center;
   }
 }
 
@@ -126,8 +149,6 @@
 }
 
 .form-field__wrapper {
-  padding: 0 40px 45px;
-
   @media (min-width: $desktop-width) {
     display: flex;
     column-gap: 80px;

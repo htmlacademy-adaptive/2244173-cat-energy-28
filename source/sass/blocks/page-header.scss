@@ -21,11 +21,24 @@
   justify-content: space-between;
 }
 
-.page-header__logo {
+.page-header__logo img {
   height: 38px;
 
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+
   @media (min-width: $desktop-width) {
+    width: 202px;
     height: 59px;
+  }
+}
+
+.page-header__logo {
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    display: flex;
   }
 }
 
@@ -99,7 +112,6 @@
 .page-header--nojs .page-header__logo-toggle {
   display: none;
 }
-
 
 .page-header--nojs .site-nav__list {
   display: block;
