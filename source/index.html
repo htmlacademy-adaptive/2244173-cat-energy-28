@@ -102,7 +102,7 @@
         </li>
       </ul>
     </section>
-    <section class="story">
+    <section class="story story__container">
       <div class="story__title-container">
         <h2 class="story__title title title--text">Живой пример</h2>
       </div>
@@ -130,44 +130,30 @@
             </p>
           </div>
         </div>
-        <div class="story__slider slider">
-          <div class="slider__images">
-            <div class="slider__image-container slider__image-container--before">
-              <picture>
-                <source media="(min-width: 1440px)"
-                  srcset="img/content/cat-fat-tablet@1x.png 1x, img/content/cat-fat-tablet@2x.png 2x">
-                <source media="(min-width: 768px)"
-                  srcset="img/content/cat-fat-tablet@1x.png 1x, img/content/cat-fat-tablet@2x.png 2x">
-                <img class="stoty__image" src="img/content/cat-fat-mobile@1x.png"
-                  srcset="img/content/cat-fat-mobile@1x.png 1x, img/content/cat-fat-mobile@2x.png 2x"
-                  alt="Кот до похудения." width="280" height="256">
-              </picture>
-            </div>
-            <div class="slider__image-container slider__image-container--after">
-              <picture>
-                <source media="(min-width: 1440px)"
-                  srcset="img/content/cat-skinny-tablet@1x.png 1x, img/content/cat-skinny-tablet@2x.png 2x">
-                <source media="(min-width: 768px)"
-                  srcset="img/content/cat-skinny-tablet@1x.png 1x, img/content/cat-skinny-tablet@2x.png 2x">
-                <img src="./img/content/cat-skinny-mobile@1x.png"
-                  srcset="img/content/cat-slinny-mobile@1x.png 1x, img/content/cat-skinny-mobile@2x.png 2x"
-                  alt="Кот после похудения." width="280" height="256">
-              </picture>
-            </div>
-          </div>
-          <div class="slider__controls">
-            <button class="slider__button" type="button">
-              <span class="slider__button-text">Было</span>
-            </button>
-            <div class="slider__range">
-              <button class="slider__thumb" type="button">
-                <span class="visually-hidden">Сравнить</span>
-              </button>
-            </div>
-            <button class="slider__button" type="button">
-              <span class="slider__button-text">Стало</span>
+        <div class="story__slider slider" style="--curtain-place: 0.5;">
+          <picture>
+            <source media="(min-width: 1440px)"
+              srcset="img/content/cat-fat-tablet@1x.png 1x, img/content/cat-fat-tablet@2x.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/content/cat-fat-tablet@1x.png 1x, img/content/cat-fat-tablet@2x.png 2x">
+            <img class="slider__image slider__image--state_before" src="img/content/cat-fat-mobile@1x.png"
+              srcset="img/content/cat-fat-mobile@1x.png 1x, img/content/cat-fat-mobile@2x.png 2x"
+              alt="Кот до похудения." width="280" height="256">
+          </picture>
+          <div class="slider__curtain">
+            <button class="slider__thumb" type="button">
+              <span class="slider__hidden">Ползунок слайдера</span>
             </button>
           </div>
+          <picture>
+            <source media="(min-width: 1440px)"
+              srcset="img/content/cat-skinny-tablet@1x.png 1x, img/content/cat-skinny-tablet@2x.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/content/cat-skinny-tablet@1x.png 1x, img/content/cat-skinny-tablet@2x.png 2x">
+            <img class="slider__image slider__image--state_after" src="./img/content/cat-skinny-mobile@1x.png"
+              srcset="img/content/cat-skinny-mobile@1x.png 1x, img/content/cat-skinny-mobile@2x.png 2x"
+              alt="Кот после похудения." width="280" height="256">
+          </picture>
         </div>
       </div>
     </section>
