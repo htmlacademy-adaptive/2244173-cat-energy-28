@@ -146,6 +146,7 @@ export const build = gulp.series(
     styles,
     html,
     scripts,
+    makeStack,
     createWebp
   ),
 );
@@ -161,6 +162,7 @@ export default gulp.series(
     styles,
     html,
     scripts,
+    makeStack,
     createWebp
   ),
   gulp.series(
