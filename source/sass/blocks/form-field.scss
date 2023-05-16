@@ -74,25 +74,58 @@
   }
 }
 
-.form-field__email {
-  background-image: url("../../img/sprite.svg#mail");
-  background-size: 20px 20px;
-  background-repeat: no-repeat;
-  background-position: 90% center;
+.form-field__container-email {
+  position: relative;
 
-  @media (min-width: $tablet-width) {
-    background-position: 97% center;
+  &::after {
+    content: "";
+    position: absolute;
+    mask-image: url("../../img/sprite.svg#mail");
+    width: 20px;
+    height: 20px;
+    background-color: $color-nero;
+    right: 15px;
+    bottom: 16px;
+
+    @media (min-width: $tablet-width) {
+      right: 16px;
+      bottom: 18px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 19px;
+      bottom: 20px;
+    }
   }
 }
 
-.form-field__phone {
-  background-image: url("../../img/sprite.svg#phone");
-  background-size: 20px 20px;
-  background-repeat: no-repeat;
-  background-position: 90% center;
+.form-field__container-email:focus-within::after,
+.form-field__container-phone:focus-within::after {
+  background-color: $color-green;
+}
 
-  @media (min-width: $tablet-width) {
-    background-position: 97% center;
+.form-field__container-phone {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    mask-image: url("../../img/sprite.svg#phone");
+    width: 20px;
+    height: 20px;
+    background-color: $color-nero;
+    right: 15px;
+    bottom: 16px;
+
+    @media (min-width: $tablet-width) {
+      right: 16px;
+      bottom: 18px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 19px;
+      bottom: 20px;
+    }
   }
 }
 
