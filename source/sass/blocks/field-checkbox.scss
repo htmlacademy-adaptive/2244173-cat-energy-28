@@ -20,21 +20,45 @@
   }
 }
 
-.field-checkbox__item {
+.field-checkbox__label {
   position: relative;
+  display: block;
   cursor: pointer;
 }
 
-.field-checkbox__label {
+.field-checkbox__name {
   padding-left: 46px;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 61px;
+  }
 }
 
-/* .field-checkbox__mark {
+.field-checkbox__input[type="checkbox"]:checked + .field-checkbox__mark {
+  &::before {
+    background-image: url("../../img/sprite.svg#check-green");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: absolute;
+    width: 18px;
+    height: 14px;
+    top: 7px;
+    left: 5px;
+    content: "";
+
+    @media (min-width: $tablet-width) {
+      width: 24px;
+      height: 19px;
+      top: 10px;
+      left: 8px;
+    }
+  }
+}
+
+.field-checkbox__mark {
   position: absolute;
   left: 0;
-  top: 50%;
-  transform: translateY(-50%);
   width: 30px;
   height: 30px;
   border: 1px solid $color-grey-cd;
@@ -42,48 +66,6 @@
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
-    margin-right: 18px;
-  }
-}
-
-.field-checkbox__input[type="checkbox"]:checked ~ .field-checkbox__mark {
-  &::before {
-    background-image: url("../../img/sprite.svg#check-green");
-    background-repeat: no-repeat;
-    width: 18px;
-    height: 14px;
-    top: 6px;
-    left: 5px;
-    position: absolute;
-    content: "";
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 24px;
-    height: 19px;  }
-}
- */
-
-
-.field-checkbox__input[type="checkbox"]:checked + .field-checkbox__mark {
-  &::before {
-    background-image: url("../../img/sprite.svg#check-green");
-    background-repeat: no-repeat;
-    background-size: 18px 14px;
-    background-position: 50% 50%;
-    position: absolute;
-    content: "";
-  }
-}
-
-.field-checkbox__input[type="checkbox"] + .field-checkbox__mark {
-  &::before {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 30px;
-    height: 30px;
-    border: 1px solid $color-grey-cd;
+    top: -40%;
   }
 }
