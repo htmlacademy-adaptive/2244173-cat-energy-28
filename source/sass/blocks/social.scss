@@ -1,23 +1,25 @@
-.social__link--vkontakte {
-  display: block;
-  mask-image: url("../../img/sprite.svg#vk");
-  background-color: #666666;
-  width: 28px;
-  height: 22px;
-}
+.social__link {
+  &--vkontakte {
+    display: block;
+    mask-image: url("../../img/sprite.svg#vk");
+    background-color: #666666;
+    width: 28px;
+    height: 22px;
+  }
 
-.social__link--youtube {
-  display: block;
-  mask-image: url("../../img/sprite.svg#youtube");
-  background-color: #666666;
-  width: 28px;
-  height: 22px;
-}
+  &--youtube {
+    display: block;
+    mask-image: url("../../img/sprite.svg#youtube");
+    background-color: #666666;
+    width: 28px;
+    height: 22px;
+  }
 
-.social__link--telegram {
-  display: block;
-  mask-image: url("../../img/sprite.svg#telegram");
-  background-color: #666666;
-  width: 28px;
-  height: 22px;
+  &--telegram {
+    display: block;
+    mask-image: url("../../img/sprite.svg#telegram");
+    background-color: #666666;
+    width: 28px;
+    height: 22px;
+  }
 }

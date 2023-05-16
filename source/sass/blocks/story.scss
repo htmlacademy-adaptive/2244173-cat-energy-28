@@ -1,4 +1,4 @@
-.story {
+.story__container {
   background-color: $color-background-story;
   padding: 25px 20px 40px 20px;
 
@@ -147,6 +147,18 @@
   @media (min-width: $desktop-width) {
     background-color: $color-grey-f2;
   }
+
+  &--weight {
+    @media (min-width: $tablet-width) {
+      width: 114px;
+    }
+  }
+
+  &--time {
+    @media (min-width: $tablet-width) {
+      width: 142px;
+    }
+  }
 }
 
 .story__item-costs {
@@ -171,22 +183,42 @@
   }
 }
 
-.story__description--weight {
+.story__container-slider {
   @media (min-width: $tablet-width) {
-    width: 114px;
+    margin: 0 auto;
+    background-color: $color-background-story;
+    margin-top: 200px;
   }
-}
-
-.story__description--time {
-  @media (min-width: $tablet-width) {
-    width: 142px;
-  }
-}
-
-.story__slider {
-  background-color: $color-background-story;
 
   @media (min-width: $desktop-width) {
     background-color: $color-grey-f2;
+    margin-top: 0;
+  }
+}
+
+.story {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    --bg-top-shift: calc(100% - 462px);
+    gap: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    --bg-top-shift: 236px;
+    grid-template-columns: auto 560px;
+    gap: 224px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    top: var(--bg-top-shift, 0);
+    width: 100vw;
+    background-color: hsl(0 0% 92%);
+    box-shadow: 100vw 0 0 0 hsl(0 0% 92%);
   }
 }

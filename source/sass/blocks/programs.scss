@@ -76,6 +76,66 @@
     padding-left: 162px;
     margin-bottom: 73px;
   }
+
+  &--slim {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../../img/sprite.svg#cat-weight-mobile");
+      background-repeat: no-repeat;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      width: 50px;
+      height: 53px;
+    }
+
+    @media (min-width: $tablet-width) {
+      &::before {
+        display: none;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &::before {
+        content: "";
+        display: block;
+        background-image: url("../../img/sprite.svg#cat-weight-desktop");
+        width: 100px;
+        height: 106px;
+      }
+    }
+  }
+
+  &--pro {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../../img/sprite.svg#cat-mass-mobile");
+      background-repeat: no-repeat;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -7px;
+      width: 67px;
+      height: 50px;
+    }
+
+    @media (min-width: $tablet-width) {
+      &::before {
+        display: none;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &::before {
+        content: "";
+        display: block;
+        background-image: url("../../img/sprite.svg#cat-mass-desktop");
+        width: 134px;
+        height: 100px;
+      }
+    }
+  }
 }
 
 .programs__description {
@@ -97,108 +157,48 @@
     margin-bottom: 27px;
     color: $color-black;
   }
-}
 
-.programs__title--slim {
-  &::before {
-    content: "";
-    position: absolute;
-    background-image: url("../../img/sprite.svg#cat-weight-mobile");
-    background-repeat: no-repeat;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
-    width: 50px;
-    height: 53px;
-  }
+  &--slim {
+    @media (min-width: $tablet-width) {
+      &::before {
+        content: "";
+        position: absolute;
+        background-image: url("../../img/sprite.svg#cat-weight-tablet");
+        background-repeat: no-repeat;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -100%;
+        width: 200px;
+        height: 200px;
+      }
+    }
 
-  @media (min-width: $tablet-width) {
-    &::before {
-      display: none;
+    @media (min-width: $desktop-width) {
+      &::before {
+        display: none;
+      }
     }
   }
 
-  @media (min-width: $desktop-width) {
-    &::before {
-      content: "";
-      display: block;
-      background-image: url("../../img/sprite.svg#cat-weight-desktop");
-      width: 100px;
-      height: 106px;
+  &--pro {
+    @media (min-width: $tablet-width) {
+      &::before {
+        content: "";
+        position: absolute;
+        background-image: url("../../img/sprite.svg#cat-mass-tablet");
+        background-repeat: no-repeat;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -100%;
+        width: 268px;
+        height: 200px;
+      }
     }
-  }
-}
 
-.programs__title--pro {
-  &::before {
-    content: "";
-    position: absolute;
-    background-image: url("../../img/sprite.svg#cat-mass-mobile");
-    background-repeat: no-repeat;
-    top: 50%;
-    transform: translateY(-50%);
-    left: -7px;
-    width: 67px;
-    height: 50px;
-  }
-
-  @media (min-width: $tablet-width) {
-    &::before {
-      display: none;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &::before {
-      content: "";
-      display: block;
-      background-image: url("../../img/sprite.svg#cat-mass-desktop");
-      width: 134px;
-      height: 100px;
-    }
-  }
-}
-
-.programs__description--slim {
-  @media (min-width: $tablet-width) {
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url("../../img/sprite.svg#cat-weight-tablet");
-      background-repeat: no-repeat;
-      top: 50%;
-      transform: translateY(-50%);
-      right: -100%;
-      width: 200px;
-      height: 200px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &::before {
-      display: none;
-    }
-  }
-}
-
-.programs__description--pro {
-  @media (min-width: $tablet-width) {
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url("../../img/sprite.svg#cat-mass-tablet");
-      background-repeat: no-repeat;
-      top: 50%;
-      transform: translateY(-50%);
-      right: -100%;
-      width: 268px;
-      height: 200px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &::before {
-      display: none;
+    @media (min-width: $desktop-width) {
+      &::before {
+        display: none;
+      }
     }
   }
 }
