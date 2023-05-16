@@ -19,9 +19,15 @@
   }
 }
 
-.form-field--comment {
-  @media (min-width: $tablet-width) {
-    margin-bottom: 65px;
+.form-field {
+  &--comment {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 65px;
+    }
+  }
+
+  &--contacts {
+    margin: 0;
   }
 }
 
@@ -158,10 +164,6 @@
     padding-left: 40px;
     margin-left: -37px;
   }
-}
-
-.form-field--contacts {
-  margin: 0;
 }
 
 .form-field__title-checkbox {

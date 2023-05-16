@@ -147,6 +147,18 @@
   @media (min-width: $desktop-width) {
     background-color: $color-grey-f2;
   }
+
+  &--weight {
+    @media (min-width: $tablet-width) {
+      width: 114px;
+    }
+  }
+
+  &--time {
+    @media (min-width: $tablet-width) {
+      width: 142px;
+    }
+  }
 }
 
 .story__item-costs {
@@ -171,18 +183,6 @@
   }
 }
 
-.story__description--weight {
-  @media (min-width: $tablet-width) {
-    width: 114px;
-  }
-}
-
-.story__description--time {
-  @media (min-width: $tablet-width) {
-    width: 142px;
-  }
-}
-
 .story__container-slider {
   @media (min-width: $tablet-width) {
     margin: 0 auto;
@@ -195,18 +195,6 @@
     margin-top: 0;
   }
 }
-
-/* .story__slider {
-  @media (min-width: $tablet-width) {
-    margin: 0 auto;
-    background-color: $color-background-story;
-  }
-
-  @media (min-width: $desktop-width) {
-
-    background-color: none;
-  }
-} */
 
 .story {
   position: relative;
