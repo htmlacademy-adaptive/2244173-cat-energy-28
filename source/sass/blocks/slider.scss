@@ -3,6 +3,16 @@
   grid-template-columns: calc(var(--curtain-place) * 100%) auto calc((1 - var(--curtain-place)) * 100%);
   width: min(100%, 560px);
   aspect-ratio: 280/256;
+  margin: 0 auto;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    top: -150px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -135px;
+  }
 }
 
 .slider__hidden {

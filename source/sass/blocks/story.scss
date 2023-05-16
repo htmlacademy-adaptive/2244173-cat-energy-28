@@ -183,24 +183,40 @@
   }
 }
 
-.story__slider {
-  margin: 0 auto;
-  background-color: $color-background-story;
+.story__container-slider {
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    background-color: $color-background-story;
+    margin-top: 200px;
+  }
 
   @media (min-width: $desktop-width) {
     background-color: $color-grey-f2;
+    margin-top: 0;
   }
 }
+
+/* .story__slider {
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    background-color: $color-background-story;
+  }
+
+  @media (min-width: $desktop-width) {
+
+    background-color: none;
+  }
+} */
 
 .story {
   position: relative;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     --bg-top-shift: calc(100% - 462px);
     gap: 100px;
   }
 
-  @media (min-width: 1280px) {
+  @media (min-width: $desktop-width) {
     --bg-top-shift: 236px;
     grid-template-columns: auto 560px;
     gap: 224px;
