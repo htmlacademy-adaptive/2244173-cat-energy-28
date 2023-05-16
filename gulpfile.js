@@ -103,7 +103,7 @@ export const copy = (done) => {
 
 // Clean
 
-const clean = () => {
+export const clean = () => {
   return deleteAsync('build');
 };
 
