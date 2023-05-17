@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 10px 20px 17px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -19,6 +18,7 @@
 .page-header__logo-container {
   display: flex;
   justify-content: space-between;
+  padding: 10px 20px 17px;
 }
 
 .page-header__logo img {
