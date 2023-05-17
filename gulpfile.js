@@ -91,7 +91,7 @@ const copy = (done) => {
     'source/img/logo-mobile.svg',
     'source/img/logo-tablet.svg',
     'source/img/logo-desktop.svg',
-    'source/img/logo-html.svg',
+    'source/img/present.svg',
     'source/img/footer-logo.svg',
     'source/img/footer-logo-tablet.svg',
   ], {

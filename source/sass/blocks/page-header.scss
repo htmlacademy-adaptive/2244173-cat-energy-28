@@ -40,6 +40,14 @@
     align-items: center;
     display: flex;
   }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-header__logo-toggle {

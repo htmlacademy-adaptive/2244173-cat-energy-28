@@ -24,6 +24,10 @@
   position: relative;
   display: block;
   cursor: pointer;
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 .field-checkbox__name {

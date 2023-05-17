@@ -1,5 +1,5 @@
 .button {
-  @include font("Oswald",400,14px,18px);
+  @include font("Oswald", 400, 14px, 18px);
   display: flex;
   justify-content: center;
   text-transform: uppercase;
@@ -10,5 +10,10 @@
 
   &:hover {
     background-color: $color-background-hover;
+  }
+
+  &:active {
+    background-color: $color-background-hover;
+    color: rgba(255, 255, 255, 0.3);
   }
 }

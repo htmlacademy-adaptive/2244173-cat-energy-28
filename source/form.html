@@ -48,6 +48,7 @@
         <div class="form-program__wrapper">
           <h2 class="visually-hidden">Данные кота</h2>
           <fieldset class="form-program__field form-info form-field title title--header">
+            <!-- Для состояния ошибки доп.класс form-field__invalid -->
             <label class="form-field__label" for="cat-name">
               <span class="form-field__name">Имя:*</span>
               <input class="form-field__input" type="text" name="cat-name" id="cat-name" placeholder="барсик" required>
@@ -94,6 +95,7 @@
         <fieldset class="form-program__field form-field form-field--contacts">
           <legend class="form-field__title-contacts title title--info">Контактные данные (владельца кота)</legend>
           <div class="form-field__wrapper">
+            <!-- Для состояния ошибки доп.класс form-field__invalid -->
             <label class="form-field__label  form-field__container-email" for="owner-email">
               <span class="form-field__name title title--header">E-mail:*</span>
               <input class="form-field__input" type="email" name="owner-email" id="owner-email"
@@ -196,10 +198,8 @@
         </li>
       </ul>
       <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="copyright__text">HTML Academy</span>
-          <img src="img/logo-html.svg" width="27" height="34" alt="Логотип HTML-академии">
-        </a>
+        <span class="copyright__text">HTML Academy</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
       </div>
     </section>
   </footer>

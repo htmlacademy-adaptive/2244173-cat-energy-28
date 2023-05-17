@@ -50,4 +50,32 @@
   @media (min-width: $tablet-width) {
     border-bottom: none;
   }
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.page-footer__copyright {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid $color-border-top;
+  padding: 20px;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+    gap: 27px;
+  }
 }

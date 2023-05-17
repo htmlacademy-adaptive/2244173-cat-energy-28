@@ -56,3 +56,7 @@
 .field-radio__label {
   padding-left: 45px;
 }
+
+.field-radio__form:disabled {
+  opacity: 0.3;
+}

@@ -47,6 +47,10 @@
     padding: 10px 20px;
     margin: 0 40px;
   }
+
+  &:hover {
+    border: 1px solid $color-grey-cd;
+  }
 }
 
 .form-field__label {
@@ -105,9 +109,19 @@
   }
 }
 
+
 .form-field__container-email:focus-within::after,
 .form-field__container-phone:focus-within::after {
   background-color: $color-green;
+}
+
+.form-field__invalid .form-field__input {
+  outline: 2px solid $color-error;
+  outline-offset: -2px;
+}
+
+.form-field__invalid.form-field__container-email::after {
+  background-color: $color-error;
 }
 
 .form-field__container-phone {

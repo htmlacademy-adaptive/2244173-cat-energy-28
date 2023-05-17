@@ -22,4 +22,14 @@
     width: 28px;
     height: 22px;
   }
+
+  &:hover,
+  &:focus-visible {
+    background-color: $color-green;
+  }
+
+  &:active {
+    background-color: $color-green;
+    opacity: 0.3;
+  }
 }
