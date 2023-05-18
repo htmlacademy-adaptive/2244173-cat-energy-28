@@ -1,6 +1,6 @@
 @mixin font($family, $weight, $size, $height) {
   font: {
-    family: $family, sans-serif;
+    family: $family, "Arial", sans-serif;
     weight: $weight;
     size: $size;
   }

@@ -34,33 +34,7 @@
     color: $color-black;
     background-color: $color-white;
     position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 55%;
-      transform: translateY(-50%);
-      width: 100vw;
-      height: 2px;
-      background-color: $color-green;
-      z-index: -1;
-      left: 0;
-    }
-
-    @media (min-width: $tablet-width) {
-      &::before {
-        content: "";
-        left: -30px;
-      }
-    }
-
-    @media (min-width: $desktop-width) {
-      &::before {
-        content: "";
-        left: -108px;
-      }
-    }
-
+    margin: 0;
 
     @media (min-width: $tablet-width) {
       @include font("Oswald", 400, 36px, 36px);

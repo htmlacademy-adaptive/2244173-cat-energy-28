@@ -45,7 +45,7 @@
   border-radius: 2px;
   color: var(--curtain-color, #666666);
   background-color: currentColor;
-  cursor: col-resize;
+  cursor: pointer;
   transition: color 0.2s, opacity 0.2s;
 
   &:hover {
@@ -54,6 +54,7 @@
 
   &:active {
     opacity: 0.6;
+    --curtain-color: #5eaa2f;
   }
 }
 

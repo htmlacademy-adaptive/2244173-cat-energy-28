@@ -1,5 +1,13 @@
 .card__link-title {
   color: $color-nero;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .card__title {

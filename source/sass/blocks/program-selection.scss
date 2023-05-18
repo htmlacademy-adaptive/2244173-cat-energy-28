@@ -1,3 +1,11 @@
+.program-selection {
+  padding: 0 20px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
+}
+
 .program-selection__description {
   @include font("Oswald",400,14px,18px);
   margin: 0 0 39px 0;

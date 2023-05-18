@@ -24,8 +24,17 @@
 }
 
 .form-program__field {
+  position: relative;
   border: none;
-  padding: 0;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .form-program__submit-container {
@@ -50,11 +59,14 @@
 }
 
 .form-program__wrapper {
+  padding: 0 20px;
+
   @media (min-width: $desktop-width) {
     width: 100%;
     display: grid;
     grid-template-columns: 570px 570px;
     column-gap: 80px;
     justify-content: space-between;
+    padding: 0 110px;
   }
 }
