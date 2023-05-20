@@ -202,9 +202,10 @@
 
 .form-field__wrapper {
   @media (min-width: $desktop-width) {
-    display: flex;
+    display: grid;
     column-gap: 80px;
     margin-bottom: 67px;
+    grid-template-columns: 570px 570px;
   }
 }
 

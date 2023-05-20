@@ -1,6 +1,7 @@
 .extra-products__button {
   background-color: #68b738;
   width: 280px;
+  align-self: center;
 
   @media (min-width: $tablet-width) {
     width: 632px;
@@ -12,7 +13,7 @@
 }
 
 .extra-products__list {
-  margin-bottom: 69px;
+  margin-bottom: 33px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -32,13 +33,13 @@
   padding: 13px 0 20px;
   border-bottom: 1px solid $color-grey-cd;
 
-  &:first-of-type {
-    border-top: 1px solid $color-grey-cd;
-  }
-
   @media (min-width: $tablet-width) {
     padding: 26px 38px 28px;
     border-bottom: 1px solid $color-grey-cd;
+
+    &:first-of-type {
+      border-top: 1px solid #cdcdcd;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -68,6 +69,7 @@
 
 .extra-products__title {
   line-height: 16px;
+  font-size: 16px;
   margin: 0 0 13px 0;
 
   @media (min-width: $desktop-width) {
@@ -116,6 +118,7 @@
   color: $color-white;
   text-align: center;
   margin: 0 auto;
+  width: 161px;
 
   @media (min-width: $tablet-width) {
     width: 160px;
@@ -163,6 +166,7 @@
   width: 290px;
   margin-left: -40px;
   padding-left: 40px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     width: 410px;
