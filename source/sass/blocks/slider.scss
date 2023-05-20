@@ -7,11 +7,12 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    top: -150px;
+    top: -100px;
   }
 
   @media (min-width: $desktop-width) {
-    top: -135px;
+    top: -132px;
+    margin-left: 50px;
   }
 }
 

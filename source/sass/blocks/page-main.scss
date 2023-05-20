@@ -28,6 +28,7 @@
 
   @media (min-width: $tablet-width) {
     background-image: none;
+    padding-top: 46px;
   }
 
   @media (min-width: $desktop-width) {
@@ -79,7 +80,7 @@
 
 .page-main__promo {
   @media (min-width: $desktop-width) {
-    padding-top: 110px;
+    padding-top: 93px;
 
     &::before {
       content: "";

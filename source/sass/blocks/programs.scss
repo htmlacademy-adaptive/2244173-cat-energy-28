@@ -28,7 +28,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    margin-left: 15px;
+    margin-left: 27px;
   }
 
   &:active {
@@ -70,6 +70,7 @@
     line-height: 36px;
     text-align: inherit;
     padding: 0;
+    margin: 0 0 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -133,6 +134,7 @@
         background-image: url("../../img/sprite.svg#cat-mass-mobile");
         width: 134px;
         height: 100px;
+        left: -19px;
       }
     }
   }
@@ -150,11 +152,12 @@
     width: 340px;
     position: relative;
     border: none;
+    padding-bottom: 32px;
   }
 
   @media (min-width: $desktop-width) {
     width: auto;
-    margin-bottom: 27px;
+    margin-bottom: -5px;
     color: $color-black;
   }
 
@@ -165,11 +168,11 @@
         position: absolute;
         background-image: url("../../img/sprite.svg#cat-weight-mobile");
         background-repeat: no-repeat;
-        top: 50%;
+        top: 37%;
         transform: translateY(-50%);
-        right: -100%;
+        right: -75%;
         width: 200px;
-        height: 200px;
+        height: 211px;
       }
     }
 
@@ -187,9 +190,9 @@
         position: absolute;
         background-image: url("../../img/sprite.svg#cat-mass-mobile");
         background-repeat: no-repeat;
-        top: 50%;
+        top: 42%;
         transform: translateY(-50%);
-        right: -100%;
+        right: -85%;
         width: 268px;
         height: 200px;
       }

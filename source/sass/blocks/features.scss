@@ -1,6 +1,6 @@
 .features {
   padding: 0 20px;
-  margin-bottom: 53px;
+  margin-bottom: 50px;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
@@ -34,7 +34,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
-    gap: 37px 154px;
+    gap: 37px 65px;
   }
 
   @media (min-width: $desktop-width) {
@@ -186,4 +186,8 @@
 
 .features__item-text {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 242px;
+  }
 }

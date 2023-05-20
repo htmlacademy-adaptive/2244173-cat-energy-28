@@ -5,7 +5,7 @@
   @media (min-width: $tablet-width) {
     color: $color-black;
     text-align: left;
-    margin-left: 12%;
+    margin-left: 118px;
     width: 71%;
   }
 
@@ -21,13 +21,15 @@
   color: $color-white;
   margin-top: 25px;
   text-transform: uppercase;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     @include font("Oswald", 400, 20px, 20px);
     color: $color-black;
     margin-top: 41px;
     text-align: left;
-    margin-left: 12%;
+    margin-left: 118px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,12 +44,10 @@
 
   @media (min-width: $tablet-width) {
     width: 244px;
-    margin: 0;
-    margin-left: 12%;
+    margin: 49px 0 526px 118px;
     font-size: 20px;
     line-height: 20px;
     padding: 17px 0;
-    margin-bottom: 526px;
   }
 
   @media (min-width: $desktop-width) {

@@ -93,7 +93,6 @@ const copy = (done) => {
     'source/img/logo-desktop.svg',
     'source/img/present.svg',
     'source/img/footer-logo.svg',
-    'source/img/footer-logo-tablet.svg',
   ], {
     base: 'source'
   })

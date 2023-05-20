@@ -76,7 +76,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: column;
     align-items: start;
-    gap: 47px;
+    gap: 65px;
   }
 }
 
@@ -91,6 +91,10 @@
 
   @media (min-width: $tablet-width) {
     width: 162px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 18px;
   }
 }
 
@@ -178,16 +182,14 @@
     margin: 0;
     flex-direction: row;
     justify-content: space-between;
-    column-gap: 80px;
-    padding-bottom: 75px;
+    column-gap: 67px;
   }
 }
 
 .story__container-slider {
   @media (min-width: $tablet-width) {
-    margin: 0 auto;
+    margin: 172px auto 0;
     background-color: $color-background-story;
-    margin-top: 200px;
   }
 
   @media (min-width: $desktop-width) {
