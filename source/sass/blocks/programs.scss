@@ -28,7 +28,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    margin-left: 27px;
+    margin-left: 16px;
   }
 
   &:active {
@@ -63,7 +63,7 @@
   font-size: 24px;
   line-height: 37px;
   margin: 0 0 30px 0;
-  padding-left: 70px;
+  padding-left: 72px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -86,7 +86,7 @@
       background-repeat: no-repeat;
       top: 50%;
       transform: translateY(-50%);
-      left: 0;
+      left: 3px;
       width: 50px;
       height: 53px;
     }

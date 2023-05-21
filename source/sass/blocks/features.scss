@@ -187,7 +187,15 @@
 .features__item-text {
   margin: 0;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     width: 242px;
+
+    br {
+      display: initial;
+    }
   }
 }

@@ -4,6 +4,7 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
+    margin-bottom: 78px;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,13 +24,15 @@
 
   @media (min-width: $tablet-width) {
     border: 1px solid $color-border-top;
-    padding: 25px 0 25px 28px;
+    padding: 28px 0 25px 28px;
+    row-gap: 23px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
     margin-right: 0;
     border: 1px solid $color-border-top;
+    width: 568px;
   }
 }
 
@@ -49,6 +52,11 @@
     background-color: #68b738;
     border-radius: 50%;
     content: "";
+
+    @media (min-width: $tablet-width) {
+      width: 18px;
+      height: 18px;
+    }
   }
 }
 
@@ -61,6 +69,11 @@
   height: 30px;
   border: 1px solid #cdcdcd;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .field-radio__form:hover .field-radio__mark {
@@ -69,6 +82,12 @@
 
 .field-radio__label {
   padding-left: 45px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 61px;
+  }
 }
 
 .field-radio__form:disabled {
