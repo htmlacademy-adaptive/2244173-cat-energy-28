@@ -69,11 +69,11 @@ const createWebp = () => {
 
 // SVG
 
-/* const svg = () => {
+const svg = () => {
   return gulp.src('source/favicons/*.svg')
     .pipe(svgo())
     .pipe(gulp.dest('build/img/favicons'))
-} */
+}
 
 const makeStack = () => {
   return gulp.src('source/img/*.svg')
@@ -87,13 +87,12 @@ const makeStack = () => {
 const copy = (done) => {
   gulp.src([
     'source/fonts/**/*.{woff2,woff}',
-    /* 'source/*.ico', */
+    'source/*.ico',
     'source/img/logo-mobile.svg',
     'source/img/logo-tablet.svg',
     'source/img/logo-desktop.svg',
-    'source/img/logo-html.svg',
+    'source/img/present.svg',
     'source/img/footer-logo.svg',
-    'source/img/footer-logo-tablet.svg',
   ], {
     base: 'source'
   })
@@ -147,6 +146,7 @@ export const build = gulp.series(
     html,
     scripts,
     makeStack,
+    svg,
     createWebp
   ),
 );
@@ -162,6 +162,7 @@ export default gulp.series(
     html,
     scripts,
     makeStack,
+    svg,
     createWebp
   ),
   gulp.series(

@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 10px 20px 17px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -19,6 +18,11 @@
 .page-header__logo-container {
   display: flex;
   justify-content: space-between;
+  padding: 10px 10px 12px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 15px 2px;
+  }
 }
 
 .page-header__logo img {
@@ -39,6 +43,14 @@
   @media (min-width: $tablet-width) {
     align-items: center;
     display: flex;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 
