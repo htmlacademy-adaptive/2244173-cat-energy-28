@@ -30,6 +30,11 @@
     margin-left: auto;
     margin-top: -5px;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    width: 175px;
+  }
 }
 
 .contacts__container {

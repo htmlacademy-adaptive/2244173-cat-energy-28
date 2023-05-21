@@ -32,6 +32,14 @@
       background-color: #d3d3d3;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 28px;
+
+    &::before {
+      top: 84px;
+    }
+  }
 }
 
 .show-more__text {

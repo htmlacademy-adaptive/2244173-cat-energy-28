@@ -26,6 +26,10 @@
     line-height: 24px;
     width: 154px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 15px;
+  }
 }
 
 .card__information-item {
@@ -73,6 +77,12 @@
     left: 7px;
   }
 
+  @media (min-width: $desktop-width) {
+    width: 163px;
+    top: -61px;
+    left: -30px;
+  }
+
   &--1000 {
     margin-left: 23px;
     margin-top: 13px;
@@ -80,6 +90,10 @@
     @media (min-width: $tablet-width) {
       margin-left: 35px;
       margin-top: -21px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 172px;
     }
   }
 }

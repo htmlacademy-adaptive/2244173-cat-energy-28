@@ -39,11 +39,16 @@
 .page-main__catalog {
   border-top: 1px solid $color-border;
   margin-top: 41px;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     border: none;
     padding: 0 30px;
-    margin-bottom: 68px;
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 74px;
   }
 }
 
@@ -61,6 +66,7 @@
   @media (min-width: $desktop-width) {
     padding: 0 110px;
     margin-bottom: 165px;
+    margin-top: 56px;
   }
 }
 

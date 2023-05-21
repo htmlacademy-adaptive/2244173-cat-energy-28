@@ -39,7 +39,7 @@
 
   &--active {
     @media (min-width: $tablet-width) {
-      padding-bottom: 10px;
+      padding-bottom: 6px;
       border-bottom: 2px solid $color-green;
     }
   }

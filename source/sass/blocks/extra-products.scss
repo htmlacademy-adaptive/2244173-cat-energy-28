@@ -21,11 +21,13 @@
   @media (min-width: $tablet-width) {
     border-left: 1px solid $color-grey-cd;
     border-right: 1px solid $color-grey-cd;
+    margin-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {
     border-left: 0;
     border-right: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -46,19 +48,21 @@
     display: flex;
     justify-content: space-between;
     column-gap: 40px;
-    padding: 14px 0 16px;
+    padding: 17px 0 16px;
   }
 }
 
 .extra-products__amount {
-  @include font("Lato", 400, 14px, 14px);
+  @include font("Lato", 400, 14px, 20px);
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
+    font-size: 16px;
     column-gap: 50px;
     justify-content: flex-end;
+    margin-bottom: 26px;
   }
 
   @media (min-width: $desktop-width) {
@@ -72,8 +76,14 @@
   font-size: 16px;
   margin: 0 0 13px 0;
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   @media (min-width: $desktop-width) {
     margin: auto 0;
+    width: 325px;
   }
 }
 
@@ -90,7 +100,7 @@
 
   @media (min-width: $tablet-width) {
     background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85) 100%), url("../../img/catalog/catalog-cat-tablet@1x.png");
-    padding: 63px 124px 57px 88px;
+    padding: 59px 124px 61px 79px;
     display: flex;
     justify-content: space-between;
 
@@ -106,6 +116,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    width: 245px;
+    height: 288px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/catalog/catalog-cat-desktop@2x.png");
@@ -121,8 +133,14 @@
   width: 161px;
 
   @media (min-width: $tablet-width) {
-    width: 160px;
+    width: 161px;
     margin: 0;
+    text-align: left;
+    align-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
   }
 }
 
@@ -146,6 +164,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     column-gap: 80px;
+    margin-bottom: 85px;
   }
 }
 
@@ -157,7 +176,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 567px;
+    width: 609px;
   }
 }
 
@@ -173,6 +192,11 @@
     margin-left: 0;
     margin-bottom: 81px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -40px;
+    padding-left: 40px;
+  }
 }
 
 .extra-products__line {
@@ -183,7 +207,7 @@
     width: 100%;
     background-color: $color-green;
     z-index: -1;
-    top: 15px;
+    top: 23px;
     right: 0;
   }
 }

@@ -1,5 +1,5 @@
 .field-radio {
-  margin: 0 -20px 26px;
+  margin: 0 -20px 23px;
   border-bottom: 1px solid $color-border-top;
 
   @media (min-width: $tablet-width) {
@@ -18,8 +18,8 @@
 .field-radio__list {
   display: flex;
   flex-direction: column;
-  row-gap: 25px;
-  padding: 27px 0;
+  row-gap: 19px;
+  padding: 24px 0;
 
   @media (min-width: $tablet-width) {
     border: 1px solid $color-border-top;

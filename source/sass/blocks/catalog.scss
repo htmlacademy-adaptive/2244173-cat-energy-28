@@ -21,15 +21,18 @@
   width: 140px;
 
   @media (min-width: $tablet-width) {
-    width: 252px;
+    width: 248px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
   }
 }
 
 .catalog__show-more {
   display: flex;
   flex-direction: column;
-  padding: 78px 20px 0px;
-  margin-bottom: 27px;
+  padding: 78px 20px 0;
 
   @media (min-width: $tablet-width) {
     padding: 0 40px 40px;
@@ -109,7 +112,7 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    margin-bottom: 33px;
+    margin-bottom: 0;
 
     &::before {
       display: none;
