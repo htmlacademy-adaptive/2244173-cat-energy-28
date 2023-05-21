@@ -87,3 +87,9 @@
 .field-checkbox__label:hover .field-checkbox__mark {
   border: 1px solid $color-form-hover;
 }
+
+.field-checkbox__input {
+  &:focus-visible ~ .field-checkbox__mark {
+    border: 1px solid $color-grey-dark;
+  }
+}

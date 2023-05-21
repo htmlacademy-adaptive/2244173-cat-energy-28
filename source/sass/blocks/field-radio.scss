@@ -14,6 +14,10 @@
 
 .field-radio__form {
   cursor: pointer;
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 .field-radio__list {
@@ -60,6 +64,12 @@
   }
 }
 
+.field-radio__input {
+  &:focus-visible ~ .field-radio__mark {
+    border: 1px solid $color-grey-dark;
+  }
+}
+
 .field-radio__mark {
   position: absolute;
   left: 0;
@@ -69,6 +79,10 @@
   height: 30px;
   border: 1px solid #cdcdcd;
   border-radius: 50%;
+
+  &:focus-visible {
+    border: 1px solid $color-grey-dark;
+  }
 
   @media (min-width: $tablet-width) {
     width: 40px;
@@ -88,8 +102,4 @@
     line-height: 30px;
     padding-left: 61px;
   }
-}
-
-.field-radio__form:disabled {
-  opacity: 0.3;
 }

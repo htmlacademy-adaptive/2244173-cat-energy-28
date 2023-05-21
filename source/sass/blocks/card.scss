@@ -99,6 +99,8 @@
 }
 
 .card-image {
+  cursor: pointer;
+
   @media (min-width: $tablet-width) {
     display: block;
     width: 100%;
