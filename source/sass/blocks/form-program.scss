@@ -28,7 +28,6 @@
 .form-program__field {
   position: relative;
   border: none;
-  padding: 0 20px;
 
   @media (min-width: $desktop-width) {
     padding: 0 110px;
@@ -46,30 +45,23 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 64px;
-    margin: 0 71px 77px;
     padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     column-gap: 81px;
-    margin: 0 111px 86px;
+    margin: 0;
+    margin-bottom: 82px;
   }
 }
 
 .form-program__wrapper {
-  padding: 0 20px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 70px;
-  }
-
   @media (min-width: $desktop-width) {
     width: 100%;
     display: grid;
     grid-template-columns: 570px 570px;
     column-gap: 98px;
     justify-content: space-between;
-    padding: 0 110px;
     margin-bottom: -5px;
   }
 }

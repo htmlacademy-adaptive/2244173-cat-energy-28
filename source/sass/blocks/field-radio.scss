@@ -14,10 +14,17 @@
 
 .field-radio__form {
   cursor: pointer;
+}
 
-  &:disabled {
-    opacity: 0.3;
-  }
+.field-radio__input:disabled + .field-radio__label {
+  cursor: default;
+  opacity: 0.3;
+}
+
+.field-radio__input:disabled + .field-radio__label + .field-radio__mark {
+  cursor: default;
+  opacity: 0.3;
+  border: 1px solid $color-grey-cd;
 }
 
 .field-radio__list {
@@ -60,6 +67,7 @@
     @media (min-width: $tablet-width) {
       width: 18px;
       height: 18px;
+      left: 12px;
     }
   }
 }

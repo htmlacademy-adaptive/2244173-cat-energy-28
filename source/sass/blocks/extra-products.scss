@@ -89,13 +89,13 @@
 
 .extra-products__promo {
   padding: 60px 60px 48px 60px;
-  background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85) 100%), url("../../img/catalog/catalog-cat-mobile@1x.png");
+  background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85) 100%), url("../../img/catalog/catalog-cat-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/catalog/catalog-cat-mobile@2x.png");
+    background-image: url("../../img/catalog/catalog-cat-mobile@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {

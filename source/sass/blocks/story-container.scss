@@ -1,0 +1,13 @@
+.story-container {
+  background-color: $color-background-story;
+  padding: 25px 20px 40px 20px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $color-white;
+    padding: 43px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}

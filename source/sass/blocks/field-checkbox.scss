@@ -1,4 +1,6 @@
 .field-checkbox {
+  padding: 0;
+  margin: 0;
   border: none;
 }
 
@@ -12,8 +14,7 @@
     grid-template-columns: 1fr 1fr;
     row-gap: 42px;
     column-gap: 58px;
-    margin-bottom: 0;
-    padding: 0 48px 59px;
+    margin-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,10 +29,18 @@
   position: relative;
   display: block;
   cursor: pointer;
+}
 
-  &:disabled {
-    opacity: 0.3;
-  }
+.field-checkbox__input:disabled + .field-checkbox__mark + .field-checkbox__name {
+  cursor: default;
+  opacity: 0.3;
+  border: none;
+}
+
+.field-checkbox__input:disabled + .field-checkbox__mark {
+  cursor: default;
+  border: 1px solid $color-grey-cd;
+  opacity: 0.3;
 }
 
 .field-checkbox__name {

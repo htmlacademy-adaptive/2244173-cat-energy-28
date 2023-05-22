@@ -25,6 +25,7 @@
 
   @media (min-width: $tablet-width) {
     @include font("Oswald", 400, 20px, 20px);
+    width: 300px;
     color: $color-black;
     margin-top: 41px;
     text-align: left;

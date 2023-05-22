@@ -22,13 +22,14 @@
 
 .form-field {
   &--comment {
+    padding: 0;
+    margin: 0;
+
     @media (min-width: $tablet-width) {
       margin-bottom: 42px;
-      padding: 0 70px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 0 110px;
       margin-bottom: 46px;
     }
   }
@@ -36,16 +37,31 @@
   &--contacts {
     margin: 0;
     margin-bottom: 10px;
-    padding: 0 20px;
+    padding: 0;
 
     @media (min-width: $tablet-width) {
       margin: 0 0 45px;
-      padding: 0 70px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 0 110px;
       margin: 0;
+    }
+  }
+
+  &--line {
+    &::before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      background-color: $color-green;
+      z-index: -1;
+      top: 20px;
+
+      @media (min-width: $tablet-width) {
+        right: 0;
+        top: 22px;
+      }
     }
   }
 }
@@ -193,6 +209,8 @@
 .form-field__title-comment {
   margin-bottom: 37px;
   width: 150px;
+  margin-left: -20px;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     width: 257px;
@@ -212,11 +230,13 @@
   margin: 0;
   margin-bottom: 36px;
   width: 170px;
+  margin-left: -20px;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
     width: 292px;
-    margin-left: 8px;
+    margin-left: -40px;
     padding-left: 40px;
   }
 
@@ -233,22 +253,5 @@
     column-gap: 80px;
     margin-bottom: 46px;
     grid-template-columns: 570px 570px;
-  }
-}
-
-.form-field__line {
-  &::before {
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    background-color: $color-green;
-    z-index: -1;
-    top: 15px;
-
-    @media (min-width: $tablet-width) {
-      right: 0;
-      top: 22px;
-    }
   }
 }

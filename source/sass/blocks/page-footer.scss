@@ -20,8 +20,11 @@
 }
 
 .page-footer__info {
-  padding: 20px 20px;
   background-color: $color-grey-f2;
+}
+
+.page-footer__container {
+  padding: 20px 20px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;

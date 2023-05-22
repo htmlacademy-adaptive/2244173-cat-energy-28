@@ -45,59 +45,65 @@
   <main class="page-main">
     <div class="page-main__container">
       <section class="page-main__program-selection program-selection">
-        <h1 class="program-selection__title title title--base">Подбор программы</h1>
-        <p class="program-selection__description title title--header">Заполните анкету, и мы подберем
-          программу питания для вашего кота</p>
+        <div class="container container-form">
+          <h1 class="program-selection__title title title--base">Подбор программы</h1>
+          <p class="program-selection__description title title--header">Заполните анкету, и мы подберем
+            программу питания для вашего кота</p>
+        </div>
       </section>
       <form class="page-form form-program" action="https://echo.htmlacademy.ru/" method="get">
-        <div class="form-program__wrapper">
-          <h2 class="visually-hidden">Данные кота</h2>
-          <fieldset class="form-program__field form-info form-field title title--header">
-            <!-- Для состояния ошибки доп.класс form-field__invalid -->
-            <label class="form-field__label" for="cat-name">
-              <span class="form-field__name">Имя:*</span>
-              <input class="form-field__input" type="text" name="cat-name" id="cat-name" placeholder="барсик" required>
-            </label>
-            <label class="form-field__label" for="cat-weight">
-              <span class="form-field__name">Вес (кг):*</span>
-              <input class="form-field__input" type="text" name="cat-weight" id="cat-weight" placeholder="7" required>
-            </label>
-            <label class="form-field__label" for="cat-age">
-              <span class="form-field__name">Возраст (лет):</span>
-              <input class="form-field__input" type="text" name="cat-age" id="cat-age" placeholder="7" required>
-            </label>
-          </fieldset>
-          <fieldset class="form-program__field form-field field-radio title title--header">
-            <h2 class="visually-hidden">Выбор программы</h2>
-            <ul class="field-radio__list list">
-              <li class="field-radio__item">
-                <label class="field-radio__form" for="weight-loss">
-                  <input class="field-radio__input visually-hidden" type="radio" name="program" value="weight-loss"
-                    id="weight-loss" checked>
-                  <span class="field-radio__label">похудение</span>
-                  <span class="field-radio__mark"></span>
-                </label>
-              </li>
-              <li class="field-radio__item">
-                <label class="field-radio__form" for="weight-add">
-                  <input class="field-radio__input visually-hidden" type="radio" name="program" value="weight-add"
-                    id="weight-add">
-                  <span class="field-radio__label">Набор массы</span>
-                  <span class="field-radio__mark"></span>
-                </label>
-              </li>
-              <li class="field-radio__item">
-                <label class="field-radio__form" for="need-advice">
-                  <input class="field-radio__input visually-hidden" type="radio" name="program" value="need-advice"
-                    id="need-advice">
-                  <span class="field-radio__label">Не знаю (нужен ваш совет)</span>
-                  <span class="field-radio__mark"></span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+        <div class="container container-form">
+          <div class="form-program__wrapper">
+            <h2 class="visually-hidden">Данные кота</h2>
+            <fieldset class="form-program__field form-info form-field title title--header">
+              <!-- Для состояния ошибки доп.класс form-field__invalid -->
+              <label class="form-field__label" for="cat-name">
+                <span class="form-field__name">Имя:*</span>
+                <input class="form-field__input" type="text" name="cat-name" id="cat-name" placeholder="барсик"
+                  required>
+              </label>
+              <label class="form-field__label" for="cat-weight">
+                <span class="form-field__name">Вес (кг):*</span>
+                <input class="form-field__input" type="text" name="cat-weight" id="cat-weight" placeholder="7" required>
+              </label>
+              <label class="form-field__label" for="cat-age">
+                <span class="form-field__name">Возраст (лет):</span>
+                <input class="form-field__input" type="text" name="cat-age" id="cat-age" placeholder="7" required>
+              </label>
+            </fieldset>
+            <fieldset class="form-program__field form-field field-radio title title--header">
+              <h2 class="visually-hidden">Выбор программы</h2>
+              <ul class="field-radio__list list">
+                <li class="field-radio__item">
+                  <label class="field-radio__form" for="weight-loss">
+                    <input class="field-radio__input visually-hidden" type="radio" name="program" value="weight-loss"
+                      id="weight-loss" checked>
+                    <span class="field-radio__label">похудение</span>
+                    <span class="field-radio__mark"></span>
+                  </label>
+                </li>
+                <li class="field-radio__item">
+                  <label class="field-radio__form" for="weight-add">
+                    <input class="field-radio__input visually-hidden" type="radio" name="program" value="weight-add"
+                      id="weight-add">
+                    <span class="field-radio__label">Набор массы</span>
+                    <span class="field-radio__mark"></span>
+                  </label>
+                </li>
+                <li class="field-radio__item">
+                  <label class="field-radio__form" for="need-advice">
+                    <input class="field-radio__input visually-hidden" type="radio" name="program" value="need-advice"
+                      id="need-advice">
+                    <span class="field-radio__label">Не знаю (нужен ваш совет)</span>
+                    <span class="field-radio__mark"></span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
         </div>
-        <fieldset class="form-program__field form-field form-field__line form-field--contacts">
+        <fieldset class="form-program__field form-field form-field--line form-field--contacts">
+          <div class="container container-form">
             <h2 class="form-field__title-contacts title title--info">Контактные данные (владельца кота)</h2>
             <div class="form-field__wrapper">
               <!-- Для состояния ошибки доп.класс form-field__invalid -->
@@ -112,14 +118,18 @@
                   placeholder="8 (960) 900-60-90" required>
               </label>
             </div>
+          </div>
         </fieldset>
-        <fieldset class="form-program__field form-field form-field__line  form-field--comment">
+        <fieldset class="form-program__field form-field form-field--line form-field--comment">
+          <div class="container container-form">
             <h2 class="form-field__title-comment title title--info">Комментарий</h2>
             <label class="form-field__label visually-hidden">Введите комментарий</label>
             <textarea class="form-field__textarea" name="owner-comment" id="owner-comment"
               placeholder="Расскажите обо всех повадках кота" rows="8"></textarea>
+          </div>
         </fieldset>
-        <fieldset class="form-program__field form-field__line form-field field-checkbox">
+        <fieldset class="form-program__field form-field--line form-field field-checkbox">
+          <div class="container container-form">
             <h2 class="form-field__title-checkbox title title--info">Дополнительно</h2>
             <ul class="field-checkbox__list list">
               <li class="field-checkbox__item title title--header">
@@ -155,11 +165,12 @@
                 </label>
               </li>
             </ul>
+            <div class="form-program__submit-container">
+              <button class="form-program__button-submit button" type="submit">Отправить заявку</button>
+              <p class="form-program__note">* — Обязательные поля</p>
+          </div>
+          </div>
         </fieldset>
-        <div class="form-program__submit-container">
-          <button class="form-program__button-submit button" type="submit">Отправить заявку</button>
-          <p class="form-program__note">* — Обязательные поля</p>
-        </div>
       </form>
     </div>
   </main>
@@ -179,31 +190,36 @@
       </iframe>
     </div>
     <section class="page-footer__info">
-      <h2 class="visually-hidden">Ссылки на соцсети и сайт разработчика.</h2>
-      <a class="page-footer__link" href="#">
-          <img class="page-footer__image" src="img/footer-logo.svg" width="128" height="24" alt="Логотип Кэт Энереджи.">
-      </a>
-      <ul class="page-footer__social list social">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">Мы в Вконтакте</span>
+      <div class="container container-form">
+        <div class="page-footer__container">
+          <h2 class="visually-hidden">Ссылки на соцсети и сайт разработчика.</h2>
+          <a class="page-footer__link" href="#">
+            <img class="page-footer__image" src="img/footer-logo.svg" width="128" height="24"
+              alt="Логотип Кэт Энереджи.">
           </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">Мы в Ютубе</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Мы в Телеграме</span>
-          </a>
-        </li>
-      </ul>
-      <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="copyright__text">HTML Academy</span>
-        </a>
+          <ul class="page-footer__social list social">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Мы в Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Мы в Ютубе</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Мы в Телеграме</span>
+              </a>
+            </li>
+          </ul>
+          <div class="page-footer__copyright copyright">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <span class="copyright__text">HTML Academy</span>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   </footer>
