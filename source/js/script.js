@@ -1,5 +1,9 @@
+// Menu
+
 let mainHeader = document.querySelector('.page-header');
 let headerToggle = document.querySelector('.page-header__logo-toggle');
+let map = document.querySelector('.map__interactive');
+map.classList.remove('map__interactive_hidden');
 
 mainHeader.classList.remove('page-header--nojs');
 
@@ -12,6 +16,8 @@ headerToggle.addEventListener('click', function () {
     mainHeader.classList.remove('page-header--opened');
   }
 });
+
+// Slider
 
 document.documentElement.lang = "ru";
 document.documentElement.classList.add("page");

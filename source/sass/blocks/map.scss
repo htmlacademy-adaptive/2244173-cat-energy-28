@@ -2,7 +2,28 @@
   display: block;
   border: none;
 
+  &_hidden {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}
+
+.map__pic-container {
+  display: block;
+  line-height: 0;
+}
+
+.map__pic {
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 396px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
     height: 400px;
   }
 }
