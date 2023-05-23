@@ -104,16 +104,6 @@
   }
 }
 
-.story__subtitle {
-  @media (min-width: $tablet-width) {
-    padding: 0 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0 110px;
-  }
-}
-
 .story__value {
   @include font("Oswald", 400, 24px, 24px);
   text-transform: uppercase;
