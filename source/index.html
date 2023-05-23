@@ -49,24 +49,27 @@
   <main class="page-main">
     <section class="page-main__promo promo">
       <div class="page-main__wrapper">
-        <h1 class="promo__title title title--base">Функциональное питание для котов</h1>
-        <p class="promo__slogan">Занялся собой? Займись котом!</p>
-        <picture>
-          <source type="image/webp" media="(min-width: 1440px)"
-            srcset="img/content/promo-desktop@1x.webp 1x, img/content/promo-desktop@2x.webp2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/content/promo-tablet@1x.webp 1x, img/content/promo-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/content/promo-mobile@1x.webp 1x, img/content/promo-mobile@2x.webp 2x">
+        <div class="container">
+          <h1 class="promo__title title title--base">Функциональное питание для котов</h1>
+          <p class="promo__slogan">Занялся собой? Займись котом!</p>
 
-          <source media="(min-width: 1440px)"
-            srcset="img/content/promo-desktop@1x.png 1x, img/content/promo-desktop@2x.png 2x">
-          <source media="(min-width: 768px)"
-            srcset="img/content/promo-tablet@1x.png 1x, img/content/promo-tablet@2x.png 2x">
-          <img class="promo__image" src="img/content/promo-mobile@1x.png" width="280" height="270"
-            srcset="img/content/promo-mobile@1x.png 1x, img/content/promo-mobile@2x.png 2x"
-            alt="Фитнес-корм для котов.">
-        </picture>
-        <a class="promo__button button" href="form.html">подобрать программу</a>
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="img/content/promo-desktop@1x.webp 1x, img/content/promo-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/content/promo-tablet@1x.webp 1x, img/content/promo-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/content/promo-mobile@1x.webp 1x, img/content/promo-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1440px)"
+              srcset="img/content/promo-desktop@1x.png 1x, img/content/promo-desktop@2x.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/content/promo-tablet@1x.png 1x, img/content/promo-tablet@2x.png 2x">
+            <img class="promo__image" src="img/content/promo-mobile@1x.png" width="280" height="270"
+              srcset="img/content/promo-mobile@1x.png 1x, img/content/promo-mobile@2x.png 2x"
+              alt="Фитнес-корм для котов.">
+          </picture>
+          <a class="promo__button button" href="form.html">подобрать программу</a>
+        </div>
       </div>
     </section>
     <section class="page-main__programs programs">
@@ -205,24 +208,23 @@
       </div>
       <div class="contacts__map map">
         <h2 class="visually-hidden">Схема проезда</h2>
-        <iframe class="map__interactive"
+        <iframe class="map__interactive map__interactive_hidden"
           src="https://yandex.ru/map-widget/v1/?ll=30.323036%2C59.938631&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=16.59"
           height="362" allowfullscreen style="position: relative; width:100%;">
         </iframe>
-        <noscript>
+        <noscript class="map__pic-container">
           <picture>
             <source type="image/webp" media="(min-width: 1440px)"
               srcset="./img/content/map-desktop@1x.webp 1x, ./img/content/map-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)"
               srcset="./img/content/map-tablet@1x.webp 1x, ./img/content/map-tablet@2x.webp 2x">
-            <source type="image/webp"
-              srcset="./img/content/map-mobile@1x.webp 1x, ./img/content/map-mobile@2x.webp 2x">
+            <source type="image/webp" srcset="./img/content/map-mobile@1x.webp 1x, ./img/content/map-mobile@2x.webp 2x">
 
             <source media="(min-width: 1440px)"
               srcset="./img/content/map-desktop@1x.jpg 1x, ./img/content/map-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
               srcset="./img/content/map-tablet@1x.jpg 1x, ./img/content/map-tablet@2x.jpg 2x">
-            <img class="map__noscript" src="./img/content/map-mobile@1x.jpg"
+            <img class="map__pic" src="./img/content/map-mobile@1x.jpg"
               srcset="./img/content/map-mobile@1x.jpg 1x, ./img/content/map-mobile@2x.jpg 2x" alt="Карта." width="320"
               height="368">
           </picture>
