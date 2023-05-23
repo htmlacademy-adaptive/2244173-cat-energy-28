@@ -1,21 +1,10 @@
 .page-footer__contacts {
-  padding: 24px 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
   background-color: $color-grey-f2;
 
-  @media (min-width: $tablet-width) {
-    padding: 60px 70px;
-  }
-
   @media (min-width: $desktop-width) {
-    position: absolute;
-    z-index: 1;
+    grid-template-columns: auto 565px 655px auto;
     background-color: $color-white;
-    margin-left: 110px;
-    margin-top: 95px;
-    column-gap: 78px;
-    padding: 60px 60px 56px 80px;
   }
 }
 
