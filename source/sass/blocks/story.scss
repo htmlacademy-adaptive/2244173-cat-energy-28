@@ -93,8 +93,9 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 436px auto;
     margin: 0 auto;
+    max-width: 1440px;
   }
 }
 
@@ -184,6 +185,7 @@
   @media (min-width: $desktop-width) {
     background-color: $color-grey-f2;
     margin-top: 0;
+    margin-left: 224px;
   }
 }
 
